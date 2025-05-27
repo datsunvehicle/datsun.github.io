@@ -12,6 +12,7 @@
   <div>
     <h3>Toyota Corolla 2018 110,000 KM</h3>
     <hr/>
+    <div id="dynamic-cars"></div>
     <table>
       <tr><td>Make:</td><td>Toyota</td></tr>
          <tr><td>Model:</td><td>Corolla</td></tr>
@@ -22,5 +23,24 @@
     </table>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa7DpUa0wFubS2BSV2IIo2wIydS5SF0FFxbA&s" width="200" height="160"/>
   </div>
+  <script src="./cars.js"></script>
+  <script>
+    document.onload = renderCars;
+
+    function renderCars(){
+      var elem = document.querySelector('#dynamic-cars');
+      if(!window.cars) {
+        console.warn('cars data not found');
+        if(elem) {
+          elem.innerHTML = 'Cars data not found!';
+          elem.style.color = 'red';
+        }
+        return;
+      }
+      
+       cars.forEach(c => elem.append(`<p>${c.make}</p>`));
+    
+    }
+  </script>
 </body>
 </html>
