@@ -38,8 +38,14 @@
         return;
       }
       
-       cars.forEach(c => elem.append(`<p>${c.make}</p>`));
+       cars.forEach(c => elem.append($('p', c.make)));
     
+    }
+
+    function $(tag, content) {
+      var e = document.createElement(tag);
+      e.innerHTML = content;
+      return e;
     }
   </script>
 </body>
