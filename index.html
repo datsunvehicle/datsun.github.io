@@ -24,8 +24,9 @@
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa7DpUa0wFubS2BSV2IIo2wIydS5SF0FFxbA&s" width="200" height="160"/>
   </div>
   <script src="./cars.js"></script>
-  <script>
+  <script type='text/javascript'>
     document.onload = renderCars;
+    window.onload = renderCars;
 
     function renderCars(){
       var elem = document.querySelector('#dynamic-cars');
