@@ -38,9 +38,13 @@
         }
         return;
       }
-      
-       cars.forEach(c => elem.appendChild($('p', c.make)));
-    
+
+      console.log('rendering cars:', cars);
+
+       cars.forEach(c => {
+        console.log('rendering car:', c);
+        elem.appendChild($('p', c.make));
+    });
     }
 
     function $(tag, content) {
