@@ -1,6 +1,6 @@
 
 
-[
+var cars =[
   {
     "id": 1,
     "name": "Tesla Model S",
