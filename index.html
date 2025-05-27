@@ -2,56 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Hello, world!</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
-  <link rel="icon" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Details</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Dawit Car Market</h1>
-  <div>
-    <h3>Toyota Corolla 2018 110,000 KM</h3>
-    <hr/>
-    <div id="dynamic-cars"></div>
-    <table>
-      <tr><td>Make:</td><td>Toyota</td></tr>
-         <tr><td>Model:</td><td>Corolla</td></tr>
-          <tr><td>Year:</td><td>2018</td></tr>
-           <tr><td>Mileage:</td><td>110,000 KM</td></tr>
-            <tr><td>Condition:</td><td>Like New</td></tr>
-            <tr><td>Price: </td><td>ETB 2,200,000 (Negotiable)</td></tr>
-    </table>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa7DpUa0wFubS2BSV2IIo2wIydS5SF0FFxbA&s" width="200" height="160"/>
-  </div>
-  <script src="./cars.js"></script>
-  <script type='text/javascript'>
-    document.onload = renderCars;
-    window.onload = renderCars;
+  <h1>Car Details</h1>
+  <div id="carDetails"></div>
 
-    function renderCars(){
-      var elem = document.querySelector('#dynamic-cars');
-      if(!window.cars) {
-        console.warn('cars data not found');
-        if(elem) {
-          elem.innerHTML = 'Cars data not found!';
-          elem.style.color = 'red';
+  <script>
+    // Parse URL query string
+    const params = new URLSearchParams(window.location.search);
+    const carId = parseInt(params.get('id'));
+
+    fetch('cars.json')
+      .then(response => response.json())
+      .then(cars => {
+        const car = cars.find(c => c.id === carId);
+        if (car) {
+          document.getElementById('carDetails').innerHTML = `
+            <h2>${car.name}</h2>
+            <p><strong>Brand:</strong> ${car.brand}</p>
+            <p><strong>Year:</strong> ${car.year}</p>
+            <img src="${car.image}" alt="${car.name}" width="400">
+          `;
+        } else {
+          document.getElementById('carDetails').innerHTML = '<p>Car not found.</p>';
         }
-        return;
-      }
-
-      console.log('rendering cars:', cars);
-
-       cars.forEach(c => {
-        console.log('rendering car:', c);
-        elem.appendChild($('p', c.make));
-    });
-    }
-
-    function $(tag, content) {
-      var e = document.createElement(tag);
-      e.innerHTML = content;
-      return e;
-    }
+      });
   </script>
 </body>
 </html>
