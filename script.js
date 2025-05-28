@@ -55,10 +55,27 @@ function closeDetails() {
 }
 
 function updateImage() {
+  // Log the current image source
+  console.log('Current Image Source:', currentImages[currentIndex]);
+  
+  // Fade out the image before changing
   carImage.style.opacity = 0;
+  
+  // Set a timeout for smooth transition
   setTimeout(() => {
     carImage.src = currentImages[currentIndex];
-    carImage.onload = () => (carImage.style.opacity = 1);
+
+    // If image loading fails, use a fallback image
+    carImage.onerror = () => {
+      console.error('Image failed to load:', currentImages[currentIndex]);
+      carImage.src = 'path/to/placeholder.jpg'; // Fallback image
+    };
+
+    // When the new image is loaded, fade it in
+    carImage.onload = () => {
+      console.log('Image loaded successfully:', currentImages[currentIndex]);
+      carImage.style.opacity = 1;
+    };
   }, 200);
 }
 
