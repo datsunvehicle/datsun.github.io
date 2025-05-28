@@ -1,18 +1,24 @@
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  color: #333;
 }
 
 table {
-  width: 80%;
+  width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #fff;
 }
 
 th, td {
+  border: 1px solid #ddd;
   padding: 12px;
-  border: 1px solid #ccc;
-  text-align: center;
+  text-align: left;
 }
 
 tr:hover {
@@ -21,23 +27,22 @@ tr:hover {
 }
 
 #carDetails {
-  border: 1px solid #ccc;
+  margin-top: 30px;
   padding: 20px;
-  width: 80%;
-  margin-top: 20px;
-  background-color: #fafafa;
+  border: 2px solid #ccc;
+  background-color: #fff;
 }
 
 #imageViewer {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
 }
 
 #carImage {
-  max-width: 400px;
-  max-height: 300px;
+  max-width: 300px;
+  height: auto;
+  border: 1px solid #ccc;
 }
 
 .hidden {
