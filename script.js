@@ -40,8 +40,8 @@ cars.forEach((car, index) => {
 function showDetails(index) {
   const car = cars[index];
   currentImages = car.images;
-  if(currentIndex ==0) 
-  currentIndex = currentIndex+1 ;
+  
+  currentIndex = 0;
   carTitle.textContent = `${car.make} ${car.model} (${car.year})`;
   updateImage(); // <- Use this instead of setting carImage.src directly
   carDetails.classList.remove('hidden');
