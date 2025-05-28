@@ -14,7 +14,7 @@
     const params = new URLSearchParams(window.location.search);
     const carId = parseInt(params.get('id'));
 
-    fetch('cars.json')
+    fetch('cars.js')
       .then(response => response.json())
       .then(cars => {
         const car = cars.find(c => c.id === carId);
