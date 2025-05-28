@@ -68,7 +68,7 @@ function updateImage() {
     // If image loading fails, use a fallback image
     carImage.onerror = () => {
       console.error('Image failed to load:', currentImages[currentIndex]);
-      carImage.src = 'path/to/placeholder.jpg'; // Fallback image
+      carImage.src = 'path/to/placeholder.jpeg'; // Fallback image
     };
 
     // When the new image is loaded, fade it in
