@@ -1,17 +1,15 @@
-
-
 const cars = [
   {
     make: 'Toyota',
     model: 'Camry',
     year: 2022,
-    images: ["images/Tesla1.jpg", "images/mercedes1.jpg","images/Toyota2018.jpg"]
+    images: ["images/Tesla1.jpg", "images/mercedes1.jpg", "images/Toyota2018.jpg"]
   },
   {
     make: 'Honda',
     model: 'Civic',
     year: 2021,
-    images: ["images/Tesla1.jpg", "images/mercedes1.jpg","images/Toyota2018.jpg"]
+    images: ["images/Tesla1.jpg", "images/mercedes1.jpg", "images/Toyota2018.jpg"]
   }
 ];
 
@@ -60,3 +58,16 @@ function prevImage() {
 function closeDetails() {
   carDetails.classList.add('hidden');
 }
+
+// Keyboard navigation
+document.addEventListener('keydown', (event) => {
+  if (!carDetails.classList.contains('hidden')) {
+    if (event.key === 'ArrowRight') {
+      nextImage();
+    } else if (event.key === 'ArrowLeft') {
+      prevImage();
+    } else if (event.key === 'Escape') {
+      closeDetails();
+    }
+  }
+});
