@@ -1,32 +1,62 @@
+
+
+const cars = [
+  {
+    make: 'Toyota',
+    model: 'Camry',
+    year: 2022,
+    images: ["images/Tesla1.jpg", "images/mercedes1.jpg","images/Toyota2018.jpg"]
+  },
+  {
+    make: 'Honda',
+    model: 'Civic',
+    year: 2021,
+    images: ["images/Tesla1.jpg", "images/mercedes1.jpg","images/Toyota2018.jpg"]
+  }
+];
+
+const tableBody = document.querySelector('#carTable tbody');
+const carDetails = document.getElementById('carDetails');
+const carTitle = document.getElementById('carTitle');
+const carImage = document.getElementById('carImage');
+
+let currentImages = [];
+let currentIndex = 0;
+
+// Populate car table
+cars.forEach((car, index) => {
+  const row = document.createElement('tr');
+  row.innerHTML = `
+    <td>${car.make}</td>
+    <td>${car.model}</td>
+    <td>${car.year}</td>
+  `;
+  row.addEventListener('click', () => showDetails(index));
+  tableBody.appendChild(row);
+});
+
+// Show car image viewer
 function showDetails(index) {
-  currentCar = cars[index];
-  currentImageIndex = 0;
-  carTitle.textContent = `${currentCar.make} ${currentCar.model} (${currentCar.year})`;
-  updateImage();
+  const car = cars[index];
+  currentImages = car.images;
+  currentIndex = 0;
+  carTitle.textContent = `${car.make} ${car.model} (${car.year})`;
+  carImage.src = currentImages[currentIndex];
   carDetails.classList.remove('hidden');
 }
 
-function updateImage() {
-  carImage.src = currentCar.images[currentImageIndex];
-  carImage.alt = `Image ${currentImageIndex + 1} of ${currentCar.make} ${currentCar.model}`;
-}
-
+// Navigate images
 function nextImage() {
-  if (!currentCar) return;
-  currentImageIndex = (currentImageIndex + 1) % currentCar.images.length;
-  updateImage();
+  currentIndex = (currentIndex + 1) % currentImages.length;
+  carImage.src = currentImages[currentIndex];
 }
 
 function prevImage() {
-  if (!currentCar) return;
-  currentImageIndex = (currentImageIndex - 1 + currentCar.images.length) % currentCar.images.length;
-  updateImage();
+  currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+  carImage.src = currentImages[currentIndex];
 }
 
+// Hide details
 function closeDetails() {
   carDetails.classList.add('hidden');
-  currentCar = null;
-  currentImageIndex = 0;
 }
-
-populateTable();
