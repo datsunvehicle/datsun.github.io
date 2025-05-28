@@ -1,34 +1,69 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Car Details</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Car List</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Car Details</h1>
-  <div id="carDetails"></div>
-  <script src="./cars.js"></script>
-  <script>
-    // Parse URL query string
-    const params = new URLSearchParams(window.location.search);
-    const carId = parseInt(params.get('id'));
+  <h1>Car Information</h1>
+  <table id="carTable">
+    <thead>
+      <tr>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Car rows will be added by JavaScript -->
+    </tbody>
+  </table>
 
-    fetch('cars.js')
-      .then(response => response.json())
-      .then(cars => {
-        const car = cars.find(c => c.id === carId);
-        if (car) {
-          document.getElementById('carDetails').innerHTML = `
-            <h2>${car.name}</h2>
-            <p><strong>Brand:</strong> ${car.brand}</p>
-            <p><strong>Year:</strong> ${car.year}</p>
-            <img src="${car.image}" alt="${car.name}" width="400">
-          `;
-        } else {
-          document.getElementById('carDetails').innerHTML = '<p>Car not found.</p>';
-        }
-      });
-  </script>
+  <div id="carDetails" class="hidden">
+    <h2 id="carTitle"></h2>
+    <div id="imageViewer">
+      <button onclick="prevImage()">⬅️</button>
+      <img id="carImage" src="" alt="Car Image">
+      <button onclick="nextImage()">➡️</button>
+    </div>
+    <button onclick="closeDetails()">Close</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Car Information</h1>
+  <table id="carTable">
+    <thead>
+      <tr>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Car rows will be added by JavaScript -->
+    </tbody>
+  </table>
+
+  <div id="carDetails" class="hidden">
+    <h2 id="carTitle"></h2>
+    <div id="imageViewer">
+      <button onclick="prevImage()">⬅️</button>
+      <img id="carImage" src="" alt="Car Image">
+      <button onclick="nextImage()">➡️</button>
+    </div>
+    <button onclick="closeDetails()">Close</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
