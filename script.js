@@ -1,5 +1,3 @@
-
-
 const cars = [
   {
     make: 'Toyota',
@@ -19,6 +17,7 @@ const tableBody = document.querySelector('#carTable tbody');
 const carDetails = document.getElementById('carDetails');
 const carTitle = document.getElementById('carTitle');
 const carImage = document.getElementById('carImage');
+const overlay = document.getElementById('overlay');
 
 let currentImages = [];
 let currentIndex = 0;
@@ -35,45 +34,35 @@ cars.forEach((car, index) => {
   tableBody.appendChild(row);
 });
 
-// Show car image viewer
-
 function showDetails(index) {
   const car = cars[index];
   currentImages = car.images;
-  
   currentIndex = 0;
+
   carTitle.textContent = `${car.make} ${car.model} (${car.year})`;
-  updateImage(); // <- Use this instead of setting carImage.src directly
+  updateImage();
+
   carDetails.classList.remove('hidden');
+  overlay.classList.remove('hidden');
 }
-// Navigate images
 
-
-// Hide details
 function closeDetails() {
   carDetails.classList.add('hidden');
+  overlay.classList.add('hidden');
 }
 
 function updateImage() {
-  // Log the current image source
-  console.log('Current Image Source:', currentImages[currentIndex]);
-  
-  // Fade out the image before changing
   carImage.style.opacity = 0;
-  
-  // Set a timeout for smooth transition
+
   setTimeout(() => {
     carImage.src = currentImages[currentIndex];
 
-    // If image loading fails, use a fallback image
     carImage.onerror = () => {
       console.error('Image failed to load:', currentImages[currentIndex]);
-      carImage.src = 'path/to/placeholder.jpeg'; // Fallback image
+      carImage.src = 'images/placeholder.jpeg';
     };
 
-    // When the new image is loaded, fade it in
     carImage.onload = () => {
-      console.log('Image loaded successfully:', currentImages[currentIndex]);
       carImage.style.opacity = 1;
     };
   }, 200);
@@ -88,3 +77,13 @@ function prevImage() {
   currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
   updateImage();
 }
+
+// Close modal when clicking outside
+overlay.addEventListener('click', closeDetails);
+
+// Close modal on ESC key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && !carDetails.classList.contains('hidden')) {
+    closeDetails();
+  }
+});

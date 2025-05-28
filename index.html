@@ -7,22 +7,26 @@
 </head>
 <body>
   <h1>Car Information</h1>
-  <div style="overflow-x: auto;">
- <table id="carTable">
-    <thead>
-      <tr>
-        <th>Make</th>
-        <th>Model</th>
-        <th>Year</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Car rows will be added by JavaScript -->
-    </tbody>
-  </table>
-  </div>
- 
 
+  <div style="overflow-x: auto;">
+    <table id="carTable">
+      <thead>
+        <tr>
+          <th scope="col">Make</th>
+          <th scope="col">Model</th>
+          <th scope="col">Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- JavaScript will add rows here -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal Overlay -->
+  <div id="overlay" class="hidden"></div>
+
+  <!-- Car Detail Viewer -->
   <div id="carDetails" class="hidden">
     <h2 id="carTitle"></h2>
     <div id="imageViewer">
