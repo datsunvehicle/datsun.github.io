@@ -43,8 +43,24 @@ tr:hover {
   max-width: 300px;
   height: auto;
   border: 1px solid #ccc;
+  transition: opacity 0.3s ease;
 }
 
 .hidden {
   display: none;
+}
+
+#imageViewer button,
+#carDetails button {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#imageViewer button:hover,
+#carDetails button:hover {
+  background-color: #ddd;
 }

@@ -46,17 +46,27 @@ function showDetails(index) {
 }
 
 // Navigate images
-function nextImage() {
-  currentIndex = (currentIndex + 1) % currentImages.length;
-  carImage.src = currentImages[currentIndex];
-}
 
-function prevImage() {
-  currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
-  carImage.src = currentImages[currentIndex];
-}
 
 // Hide details
 function closeDetails() {
   carDetails.classList.add('hidden');
+}
+
+function updateImage() {
+  carImage.style.opacity = 0;
+  setTimeout(() => {
+    carImage.src = currentImages[currentIndex];
+    carImage.onload = () => (carImage.style.opacity = 1);
+  }, 200);
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % currentImages.length;
+  updateImage();
+}
+
+function prevImage() {
+  currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+  updateImage();
 }
