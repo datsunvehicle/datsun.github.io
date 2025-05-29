@@ -3,13 +3,15 @@ const cars = [
     make: 'Toyota',
     model: 'Camry',
     year: 2022,
-    images: ["images/Toyota2018.avif","images/Mercedes.jpg", "images/Tesla1.jpg","images/Toyota.jpg"]
+    images: ["images/Toyota2018.avif","images/Mercedes.jpg", "images/Tesla1.jpg","images/Toyota.jpg"],
+    show: true
   },
   {
     make: 'Honda',
     model: 'Civic',
     year: 2021,
-    images: ["images/Toyota.jpg","images/Mercedes.jpg", "images/Tesla1.jpg","images/Toyota2018.avif"]
+    images: ["images/Toyota.jpg","images/Mercedes.jpg", "images/Tesla1.jpg","images/Toyota2018.avif"],
+    show: false
   }
 ];
 
@@ -23,7 +25,7 @@ let currentImages = [];
 let currentIndex = 0;
 
 // Populate car table
-cars.forEach((car, index) => {
+cars.filter(c => c.show).forEach((car, index) => {
   const row = document.createElement('tr');
   row.innerHTML = `
     <td>${car.make}</td>
