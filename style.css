@@ -4,12 +4,13 @@ body {
   background-color: #f9f9f9;
   height: 100vh;
   display: flex;
+  flex-direction: column;
 }
 
 .container {
   display: flex;
-  flex-grow: 1;
-  height: 100vh;
+  flex: 1;
+  height: 100%;
   width: 100%;
   overflow: hidden;
 }
@@ -47,15 +48,19 @@ body {
   background-color: #575757;
 }
 
-/* === Content Area === */
+/* === Content === */
 .content {
   flex-grow: 1;
   padding: 20px;
   overflow-y: auto;
 }
 
-/* === Headings === */
-h1 {
+.content-section {
+  margin-bottom: 40px;
+}
+
+/* === Typography === */
+h1, h2 {
   color: #333;
 }
 
@@ -83,7 +88,7 @@ tr:hover {
   cursor: pointer;
 }
 
-/* === Modal Overlay === */
+/* === Modal and Overlay === */
 #overlay {
   position: fixed;
   top: 0;
@@ -94,7 +99,6 @@ tr:hover {
   z-index: 1000;
 }
 
-/* === Car Detail Modal === */
 #carDetails {
   position: fixed;
   top: 10%;
@@ -119,13 +123,12 @@ tr:hover {
 }
 
 #carImage {
-  max-width: 300px;
+  max-width: 100%;
   height: auto;
   border: 1px solid #ccc;
   transition: opacity 0.3s ease-in-out;
 }
 
-/* === Buttons === */
 #imageViewer button,
 #carDetails button {
   padding: 8px 12px;
@@ -144,4 +147,37 @@ tr:hover {
 /* === Utilities === */
 .hidden {
   display: none;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  table, th, td {
+    font-size: 14px;
+  }
+
+  #carDetails {
+    width: 95%;
+    top: 5%;
+  }
+
+  #imageViewer {
+    flex-direction: column;
+  }
+
+  #imageViewer button {
+    width: 100%;
+  }
 }
