@@ -1,19 +1,48 @@
 const cars = [
   {
-    make: 'Toyota',
-    model: 'Camry',
-    year: 2022,
-    images: ["images/CWZF7485.JPG","images/Mercedes.jpg", "images/Tesla1.jpg","images/Toyota.jpg"],
+    make: 'Chevrolet',
+    model: 'traverse',
+    year: 2017,
+    images: ["images/BCMY1021.JPG","images/CJCT0637.JPG", "images/DTFU3626.JPG","images/DZUN5950.JPG",
+      "images/EDVN3326.JPG","images/EZGY0476.JPG","images/IWQX0277.JPG","images/LANC2403.JPG",
+      "images/LBWO5847.JPG","images/LRUD7400.JPG","images/NRIK9550.JPG","images/OKGN3474.JPG",
+      "images/RHLT0259.JPG","images/SHUR6003.JPG","images/UETT1170.JPG","images/VJWR1430.JPG",
+      "images/VTBH0091.JPG","images/WTVW9115.JPG",
+    ],
+    show: true
+  },
+  {
+    make: 'Hyundai',
+    model: 'Tucson',
+    year: 2021,
+     images: ["images/ACOB3309.JPG","images/APRM7360.JPG", "images/BIZQ5139.JPG","images/CEWL9729.JPG",
+      "images/HUPK2456.JPG","images/IAZA0773.JPG","images/KUWM6354.JPG","images/LWPT1972.JPG",
+      "images/MFHW0920.JPG","images/OUHD9137.JPG","images/PAMO5438.JPG","images/QGWH4070.JPG",
+      "images/QVIP5094.JPG","images/REQP2726.JPG","images/THKZ5796.JPG","images/TIOO7458.JPG",
+      "images/UMRR5440.JPG","images/VBIC5107.JPG","images/VXHL2171.JPG","images/WKPZ5373.JPG",
+    ],
+    show: true
+  },
+  {
+    make: 'kia',
+    model: 'Forte',
+    year: 2020,
+    images: ["images/IMG_3738.JPG","images/IMG_3739.JPG", "images/IMG_3740.JPG","images/IMG_3741.JPG",
+      "images/IMG_3742.JPG","images/IMG_3743.JPG","images/IMG_3744.JPG","images/IMG_3745.JPG",
+      "images/IMG_3746.JPG","images/IMG_3747.JPG","images/IMG_3748.JPG","images/IMG_3749.JPG",
+      "images/IMG_3750.JPG","images/IMG_3751.JPG","images/IMG_3752.JPG","images/IMG_3753.JPG",
+      "images/IMG_3754.JPG",
+    ],
     show: true
   },
   {
     make: 'Honda',
     model: 'Civic',
-    year: 2021,
-    images: ["images/CWZF7485.JPG","images/hondacivic/CQTZ1927.JPG", "images/hondacivic/ERXJ9584.JPG","images/GBXZ6124.jpg",
-      "images/HIDN0672.jpg","images/IVBU6422.jpg","images/JTOJ2054.jpg","images/KDBQ3695.jpg",
-      "images/MQVW0244.jpg","images/QDND8422.jpg","images/TCUT9580.jpg","images/TJCI6545.jpg",
-      "images/TSYC6618.jpg"
+    year: 2005,
+    images: ["images/CWZF7485.JPG","images/CQTZ1927.JPG", "images/ERXJ9584.JPG","images/GBXZ6124.JPG",
+      "images/HIDN0672.JPG","images/IVBU6422.JPG","images/JTOJ2054.JPG","images/KDBQ3695.JPG",
+      "images/MQVW0244.JPG","images/QDND8422.JPG","images/TCUT9580.JPG","images/TJCI6545.JPG",
+      "images/TSYC6618.JPG"
     ],
     show: true
   }
