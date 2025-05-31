@@ -10,7 +10,7 @@ const cars = [
     make: 'Honda',
     model: 'Civic',
     year: 2021,
-    images: ["images/CWZF7485.JPG","images/CQTZ1927.jpg", "images/ERXJ9584.jpg","images/GBXZ6124.jpg",
+    images: ["images/CWZF7485.JPG","images/hondacivic/CQTZ1927.JPG", "images/hondacivic/ERXJ9584.JPG","images/GBXZ6124.jpg",
       "images/HIDN0672.jpg","images/IVBU6422.jpg","images/JTOJ2054.jpg","images/KDBQ3695.jpg",
       "images/MQVW0244.jpg","images/QDND8422.jpg","images/TCUT9580.jpg","images/TJCI6545.jpg",
       "images/TSYC6618.jpg"
