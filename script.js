@@ -15,7 +15,7 @@ const cars = [
       "images/hondacivic/MQVW0244.jpg","images/hondacivic/QDND8422.jpg","images/hondacivic/TCUT9580.jpg","images/hondacivic/TJCI6545.jpg",
       "images/hondacivic/TSYC6618.jpg"
     ],
-    show: false
+    show: true
   }
 ];
 
