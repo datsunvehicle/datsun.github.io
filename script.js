@@ -127,3 +127,6 @@ function showSection(id) {
   });
   document.getElementById(id).classList.remove('hidden');
 }
+function toggleMenu() {
+  document.querySelector('.sidebar').classList.toggle('active');
+}
