@@ -3,7 +3,7 @@ const cars = [
     make: 'Toyota',
     model: 'Camry',
     year: 2022,
-    images: ["images/CWZF7485.jpg","images/Mercedes.jpg", "images/Tesla1.jpg","images/Toyota.jpg"],
+    images: ["images/CWZF7485.JPG","images/Mercedes.jpg", "images/Tesla1.jpg","images/Toyota.jpg"],
     show: true
   },
   {
