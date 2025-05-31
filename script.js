@@ -65,7 +65,7 @@ function updateImage() {
 
     carImage.onerror = () => {
       console.error('Image failed to load:', currentImages[currentIndex]);
-      carImage.src = 'images/placeholder.jpeg';
+      carImage.src = 'images/placeholder.jpg';
     };
 
     carImage.onload = () => {
