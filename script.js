@@ -47,7 +47,6 @@ const cars = [
     show: true
   }
 ];
-
 const tableBody = document.querySelector('#carTable tbody');
 const carDetails = document.getElementById('carDetails');
 const carTitle = document.getElementById('carTitle');
@@ -57,7 +56,7 @@ const overlay = document.getElementById('overlay');
 let currentImages = [];
 let currentIndex = 0;
 
-// Populate car table
+// Populate table
 cars.filter(c => c.show).forEach((car, index) => {
   const row = document.createElement('tr');
   row.innerHTML = `
@@ -113,10 +112,8 @@ function prevImage() {
   updateImage();
 }
 
-// Close modal when clicking outside
 overlay.addEventListener('click', closeDetails);
 
-// Close modal on ESC key
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && !carDetails.classList.contains('hidden')) {
     closeDetails();

@@ -1,40 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Car List</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Service Website</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Car Information</h1>
+  <div class="container">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <h2>Car Services</h2>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#garage">Garage</a></li>
+        <li><a href="#used-cars">Used Cars</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <div style="overflow-x: auto;">
-    <table id="carTable">
-      <thead>
-        <tr>
-          <th scope="col">Make</th>
-          <th scope="col">Model</th>
-          <th scope="col">Year</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- JavaScript will add rows here -->
-      </tbody>
-    </table>
-  </div>
+    <!-- Main Content -->
+    <main class="content">
+      <section id="overview">
+        <h1>Welcome to Our Car Service!</h1>
+        <p>We provide top-notch garage services and offer quality used cars at affordable prices.</p>
+      </section>
 
-  <!-- Modal Overlay -->
-  <div id="overlay" class="hidden"></div>
+      <section id="garage">
+        <h2>Garage Services</h2>
+        <p>We offer oil changes, tire replacements, engine diagnostics, and full car servicing.</p>
+      </section>
 
-  <!-- Car Detail Viewer -->
-  <div id="carDetails" class="hidden">
-    <h2 id="carTitle"></h2>
-    <div id="imageViewer">
-      <button onclick="prevImage()">⬅️</button>
-      <img id="carImage" src="" alt="Car Image">
-      <button onclick="nextImage()">➡️</button>
-    </div>
-    <button onclick="closeDetails()">Close</button>
+      <section id="used-cars">
+        <h2>Available Used Cars</h2>
+
+        <div style="overflow-x: auto;">
+          <table id="carTable">
+            <thead>
+              <tr>
+                <th scope="col">Make</th>
+                <th scope="col">Model</th>
+                <th scope="col">Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- JavaScript adds rows -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Modal Overlay -->
+        <div id="overlay" class="hidden"></div>
+
+        <!-- Car Detail Viewer -->
+        <div id="carDetails" class="hidden">
+          <h2 id="carTitle"></h2>
+          <div id="imageViewer">
+            <button onclick="prevImage()">⬅️</button>
+            <img id="carImage" src="" alt="Car Image">
+            <button onclick="nextImage()">➡️</button>
+          </div>
+          <button onclick="closeDetails()">Close</button>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@carservice.com<br/>Phone: +123-456-7890</p>
+      </section>
+    </main>
   </div>
 
   <script src="script.js"></script>
