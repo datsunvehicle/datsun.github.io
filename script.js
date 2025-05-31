@@ -10,7 +10,11 @@ const cars = [
     make: 'Honda',
     model: 'Civic',
     year: 2021,
-    images: ["images/Toyota.jpg","images/Mercedes.jpg", "images/Tesla1.jpg","images/Toyota2018.avif"],
+    images: ["images/hondacivic/CWZF7485.jpg","images/hondacivic/CQTZ1927.jpg", "images/hondacivic/ERXJ9584.jpg","images/hondacivic/GBXZ6124.jpg",
+      "images/hondacivic/HIDN0672.jpg","images/hondacivic/IVBU6422.jpg","images/hondacivic/JTOJ2054.jpg","images/hondacivic/KDBQ3695.jpg",
+      "images/hondacivic/MQVW0244.jpg","images/hondacivic/QDND8422.jpg","images/hondacivic/TCUT9580.jpg","images/hondacivic/TJCI6545.jpg",
+      "images/hondacivic/TSYC6618.jpg"
+    ],
     show: false
   }
 ];
