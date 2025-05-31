@@ -12,40 +12,33 @@
     <nav class="sidebar">
       <h2>Car Services</h2>
       <ul>
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#garage">Garage</a></li>
-        <li><a href="#used-cars">Used Cars</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" onclick="showSection('overview')">Overview</a></li>
+        <li><a href="#" onclick="showSection('garage')">Garage</a></li>
+        <li><a href="#" onclick="showSection('used-cars')">Used Cars</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
       </ul>
     </nav>
 
     <!-- Main Content -->
     <main class="content">
-      <section id="overview">
+      <section id="overview" class="content-section">
         <h1>Welcome to Our Car Service!</h1>
         <p>We provide top-notch garage services and offer quality used cars at affordable prices.</p>
       </section>
 
-      <section id="garage">
+      <section id="garage" class="content-section hidden">
         <h2>Garage Services</h2>
         <p>We offer oil changes, tire replacements, engine diagnostics, and full car servicing.</p>
       </section>
 
-      <section id="used-cars">
+      <section id="used-cars" class="content-section hidden">
         <h2>Available Used Cars</h2>
-
         <div style="overflow-x: auto;">
           <table id="carTable">
             <thead>
-              <tr>
-                <th scope="col">Make</th>
-                <th scope="col">Model</th>
-                <th scope="col">Year</th>
-              </tr>
+              <tr><th>Make</th><th>Model</th><th>Year</th></tr>
             </thead>
-            <tbody>
-              <!-- JavaScript adds rows -->
-            </tbody>
+            <tbody></tbody>
           </table>
         </div>
 
@@ -64,7 +57,7 @@
         </div>
       </section>
 
-      <section id="contact">
+      <section id="contact" class="content-section hidden">
         <h2>Contact Us</h2>
         <p>Email: contact@carservice.com<br/>Phone: +123-456-7890</p>
       </section>
