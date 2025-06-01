@@ -215,7 +215,7 @@ tr:hover {
   }
 }
 
-@media (max-width: 600px) {
+<!--@media (max-width: 600px) {
   table, thead, tbody, th, td, tr {
     display: block;
     width: 100%;
@@ -245,4 +245,4 @@ tr:hover {
     font-weight: bold;
     text-align: left;
   }
-}
+}-->
