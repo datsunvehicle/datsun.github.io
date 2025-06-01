@@ -246,3 +246,13 @@ tr:hover {
     text-align: left;
   }
 }
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  table-layout: fixed; /* Ensures cells don't shrink unevenly */
+  min-width: 400px;     /* Or whatever minimum width you want */
+}
