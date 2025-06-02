@@ -4,20 +4,21 @@
   flex-direction: row;
   height: 100%;
   width: 100%;
+  margin-left: 220px; /* Space for the sidebar */
 }
 
 .sidebar {
   width: 220px;
   background-color: #333;
   color: white;
-  position: fixed;  /* Keep it fixed to the left */
+  position: fixed;  /* Fix sidebar to the left */
   height: 100vh;
   padding: 20px;
   box-sizing: border-box;
 }
 
 .content {
-  margin-left: 220px;  /* Space for sidebar */
+  margin-left: 220px;  /* Content shifts to the right to make room for sidebar */
   padding: 20px;
   flex-grow: 1;
   overflow-y: auto;
