@@ -32,13 +32,14 @@
 
   .sidebar {
     width: 200px;  /* Sidebar width on mobile */
-    height: auto;
-    position: relative;  /* Sidebar scrollable */
+    position: fixed;  /* Keep the sidebar fixed on the left */
+    height: 100vh;  /* Full screen height */
   }
 
   .content {
-    margin-left: 0;
+    margin-left: 0;  /* Remove margin for content to fit below */
     padding: 10px;
+    overflow-y: auto;
   }
 
   .sidebar ul li a {
@@ -48,15 +49,18 @@
 
 /* === Very Small Screens (below 480px) === */
 @media (max-width: 480px) {
-  .sidebar {
+   .sidebar {
     width: 100%;  /* Full width sidebar on small screens */
-    position: relative;
+    position: fixed;  /* Sidebar stays fixed at the top */
     height: auto;
+    top: 0;  /* Sidebar appears at the top */
+    z-index: 10; /* Ensure it is on top of content */
     overflow-y: auto;  /* Allow sidebar scrolling */
   }
 
   .content {
     padding: 10px;
-    margin-left: 0;
+    margin-left: 0;  /* Content takes full width */
+    margin-top: 200px;  /* Add space for sidebar */
   }
 }
