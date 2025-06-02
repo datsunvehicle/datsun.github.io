@@ -117,7 +117,7 @@ function showDetails(index) {
   const car = cars[index];
   currentImages = car.images;
   currentIndex = 0;
-  carCondition.textContent=`${car.condition}`;
+  carCondition.innerHTML = car.condition;
   carTitle.textContent = `${car.make} ${car.model} (${car.year})`;
   updateImage();
 
