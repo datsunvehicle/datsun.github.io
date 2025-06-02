@@ -29,9 +29,9 @@ const cars = [
     year: 2020,
     images: [
   
-      "images/IMG_3738.JPG","images/kia/IMG_3739.JPG", "images/kia/IMG_3740.JPG","images/kia/IMG_3741.JPG",
-      "images/IMG_3742.JPG","images/kia/IMG_3743.JPG","images/kia/IMG_3744.JPG","imageskia//IMG_3745.JPG",
-      "images/IMG_3746.JPG","images/kia/IMG_3747.JPG","images/kia/IMG_3748.JPG","images/kia/IMG_3749.JPG",
+      "images/kia/IMG_3738.JPG","images/kia/IMG_3739.JPG", "images/kia/IMG_3740.JPG","images/kia/IMG_3741.JPG",
+      "images/kia/IMG_3742.JPG","images/kia/IMG_3743.JPG","images/kia/IMG_3744.JPG","imageskia//IMG_3745.JPG",
+      "images/kia/IMG_3746.JPG","images/kia/IMG_3747.JPG","images/kia/IMG_3748.JPG","images/kia/IMG_3749.JPG",
       "images/kia/IMG_3750.JPG","images/kia/IMG_3751.JPG","images/kia/IMG_3752.JPG","images/kia/IMG_3753.JPG",
       "images/kia/IMG_3754.JPG",
     ],
@@ -41,7 +41,7 @@ const cars = [
     make: 'Honda',
     model: 'Civic',
     year: 2005,
-    images: ["images/hondacivic/hondacivic/CQTZ1927.JPG", "images/hondacivic/CWZF7485.JPG","images/hondacivic/ERXJ9584.JPG","images/hondacivic/GBXZ6124.JPG",
+    images: ["images/hondacivic/CQTZ1927.JPG", "images/hondacivic/CWZF7485.JPG","images/hondacivic/ERXJ9584.JPG","images/hondacivic/GBXZ6124.JPG",
       "images/hondacivic/HIDN0672.JPG","images/hondacivic/IVBU6422.JPG","images/hondacivic/JTOJ2054.JPG","images/hondacivic/KDBQ3695.JPG",
       "images/hondacivic/MQVW0244.JPG","images/hondacivic/QDND8422.JPG","images/hondacivic/TCUT9580.JPG","images/hondacivic/TJCI6545.JPG",
       "images/hondacivic/TSYC6618.JPG"
