@@ -305,4 +305,5 @@ tr:hover {
 #garage { border-left-color: #e67e22; }         /* Orange */
 #used-cars { border-left-color: #9b59b6; }      /* Purple */
 #availability { border-left-color: #27ae60; }   /* Green */
-#contact { border-left-color: #7f8c8d; }  
+#contact { border-left-color: #7f8c8d; } 
+#carCondition { border-left-color: #9b59b6; } 
