@@ -7,22 +7,12 @@ const cars = [
     price:'$6,500',
     show:true,
     condition: `✅ Excellent Driving Condition:
-The car runs smoothly with no issues affecting performance or drivability.
-
-🔧 Recently Serviced:
-A full service has been completed recently, ensuring the vehicle is up to date on maintenance.
-
-⚙️ No Mechanical Issues:
-The engine, transmission, brakes, and other critical components are in proper working order.
-
-🛢️ 4-Cylinder Engine – Fuel Efficient:
-Ideal for daily commuting and long-distance travel; delivers great mileage and helps save on gas.
-
-🚗 Almost New Tires:
-All four tires are in excellent condition with minimal wear—ready for the road.
-
-🧪 Open Inspection Policy:
-Feel free to schedule a test drive or bring your own trusted mechanic to inspect the car before purchasing.`,
+<ul>
+  <li>⚙️ No mechanical issues in engine, transmission, or brakes</li>
+  <li>💡 Smooth performance with no drivability concerns</li>
+  <li>🛠️ Inspected and serviced thoroughly before being offered for sale</li>
+  <li>🧪 Transparent inspection policy – bring your own mechanic</li>
+</ul>`,
     images: [
       "images/chevytraverse/BCMY1021.JPG", "images/chevytraverse/CJCT0637.JPG", 
       "images/chevytraverse/DTFU3626.JPG", "images/chevytraverse/DZUN5950.JPG",
@@ -37,20 +27,13 @@ Feel free to schedule a test drive or bring your own trusted mechanic to inspect
   }
 ,
   {
-    condition:`Excellent Driving Condition – Like New!
-This is an almost brand-new, well-maintained car in excellent condition.
-
-Fuel-efficient 4-cylinder engine
-
-Backup camera
-
-Power seat
-
-Clean and well-kept inside and out
-
-You're welcome to test drive it or take it to your mechanic for a full inspection before you buy.
-
-Don’t miss out on this reliable, gas-saving vehicle!`,
+    condition:`✅ Excellent Driving Condition : <ul>
+  <li>✨ Almost brand-new condition</li>
+  <li>🎥 Backup camera included</li>
+  <li>💺 Power-adjustable seat</li>
+  <li>💎 Extra clean interior and exterior</li>
+  <li>💰 Reliable and gas-saving</li>
+</ul>`,
     make: 'Hyundai',
     model: 'Tucson',
     year: 2021,
@@ -68,10 +51,12 @@ Don’t miss out on this reliable, gas-saving vehicle!`,
      make: 'kia',
     model: 'Forte',
     year: 2020,
-    condition:`For Sale: Like-New Car – Only 8,000 Miles!
-       This car is in excellent, almost brand-new condition with only 8,000 miles on it. Everything is clean and well-maintained — no wear, no tear. Runs smoothly and offers great gas mileage.
-       Feel free to bring your mechanic for an inspection before making a decision.
-       Come see it for yourself – you won’t be disappointed!`,
+    condition:`✅ Excellent Driving Conditionor Sale: Like-New Car:<ul>
+  <li>📉 Extremely low mileage – only 8,000 miles!</li>
+  <li>✨ Like-new condition inside and out</li>
+  <li>🧼 No visible wear or tear</li>
+  <li>💬 “You won’t be disappointed” – a must-see car!</li>
+</ul>`,
     milleage: '16,950',
     price:'$8000',
     images: [
@@ -85,18 +70,12 @@ Don’t miss out on this reliable, gas-saving vehicle!`,
     show: true
   },
   {
-    condition:`Excellent Driving Condition – Ready to Go!
-This car is in great shape and runs smoothly with no mechanical issues.
-
-Recent service completed
-
-Fuel-efficient 4-cylinder engine
-
-All 4 tires are nearly new
-
-You're welcome to test drive it and even take it to your mechanic for inspection before buying.
-
-Reliable, economical, and ready for the road!`,
+    condition:`✅ Excellent Driving Condition : <ul>
+  <li>🛠️ Recently serviced and ready to go</li>
+  <li>🛞 Tires are nearly new</li>
+  <li>✅ No mechanical issues</li>
+  <li>🚗 Economical and road-ready</li>
+</ul>`,
     make: 'Honda',
     model: 'Civic',
     year: 2005,
