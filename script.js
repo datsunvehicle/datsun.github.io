@@ -41,7 +41,7 @@ const cars = [
     make: 'Honda',
     model: 'Civic',
     year: 2005,
-    images: ["images/hondacivic/CWZF7485.JPG","images/hondacivic/ERXJ9584.JPG","images/hondacivic/GBXZ6124.JPG",
+    images: ["images/hondacivic/hondacivic/CQTZ1927.JPG", "images/hondacivic/CWZF7485.JPG","images/hondacivic/ERXJ9584.JPG","images/hondacivic/GBXZ6124.JPG",
       "images/hondacivic/HIDN0672.JPG","images/hondacivic/IVBU6422.JPG","images/hondacivic/JTOJ2054.JPG","images/hondacivic/KDBQ3695.JPG",
       "images/hondacivic/MQVW0244.JPG","images/hondacivic/QDND8422.JPG","images/hondacivic/TCUT9580.JPG","images/hondacivic/TJCI6545.JPG",
       "images/hondacivic/TSYC6618.JPG"
