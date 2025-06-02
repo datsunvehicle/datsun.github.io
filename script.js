@@ -36,7 +36,20 @@ Feel free to schedule a test drive or bring your own trusted mechanic to inspect
   }
 ,
   {
-    condition:'',
+    condition:`Excellent Driving Condition – Like New!
+This is an almost brand-new, well-maintained car in excellent condition.
+
+Fuel-efficient 4-cylinder engine
+
+Backup camera
+
+Power seat
+
+Clean and well-kept inside and out
+
+You're welcome to test drive it or take it to your mechanic for a full inspection before you buy.
+
+Don’t miss out on this reliable, gas-saving vehicle!`,
     make: 'Hyundai',
     model: 'Tucson',
     year: 2021,
@@ -51,10 +64,13 @@ Feel free to schedule a test drive or bring your own trusted mechanic to inspect
     show: true
   },
   {
-    condition:'',
-    make: 'kia',
+     make: 'kia',
     model: 'Forte',
     year: 2020,
+    condition:`For Sale: Like-New Car – Only 8,000 Miles!
+       This car is in excellent, almost brand-new condition with only 8,000 miles on it. Everything is clean and well-maintained — no wear, no tear. Runs smoothly and offers great gas mileage.
+       Feel free to bring your mechanic for an inspection before making a decision.
+       Come see it for yourself – you won’t be disappointed!`,
     milleage: '16,950',
     price:'$8000',
     images: [
@@ -68,7 +84,18 @@ Feel free to schedule a test drive or bring your own trusted mechanic to inspect
     show: true
   },
   {
-    condition:'',
+    condition:`Excellent Driving Condition – Ready to Go!
+This car is in great shape and runs smoothly with no mechanical issues.
+
+Recent service completed
+
+Fuel-efficient 4-cylinder engine
+
+All 4 tires are nearly new
+
+You're welcome to test drive it and even take it to your mechanic for inspection before buying.
+
+Reliable, economical, and ready for the road!`,
     make: 'Honda',
     model: 'Civic',
     year: 2005,
