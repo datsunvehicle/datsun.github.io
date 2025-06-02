@@ -24,7 +24,8 @@
 
     <!-- Main Content -->
     <main class="content">
-      <section id="overview" class="content-section">       
+      <section id="overview" class="content-section">
+       
           <h1>Your Trusted Garage & Quality Used Car Provider</h1>
         <p>We take pride in delivering professional garage services and offering well-maintained, high-quality used cars at competitive prices. Every vehicle we sell undergoes a comprehensive inspection and servicing process by our skilled and certified mechanics. If any defects are found, they are carefully repaired and tested before the car is made available for sale—ensuring you receive a vehicle that is both safe and reliable.</p>
 
@@ -56,17 +57,15 @@
 
         <div id="overlay" class="hidden"></div>
 
-        <div id="carDetails" >
-  <div id="carDescription" style="flex: 1;">
-    <p id="carText">Car description will go here...</p>
-  </div>
-
-  <div id="imageViewer" style="display: flex; flex-direction: column; align-items: center;">
-    <button onclick="prevImage()">⬅️</button>
-    <img id="carImage" src="" alt="Car Image" style="max-width: 300px; height: auto;">
-    <button onclick="nextImage()">➡️</button>
-  </div>
-</div>
+        <div id="carDetails" class="hidden">
+          <h2 id="carTitle"></h2>
+          <div id="imageViewer">
+            <button onclick="prevImage()">⬅️</button>
+            <img id="carImage" src="" alt="Car Image">
+            <button onclick="nextImage()">➡️</button>
+          </div>
+          <button onclick="closeDetails()">Close</button>
+        </div>
       </section>
 
       <section id="contact" class="content-section hidden">
