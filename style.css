@@ -175,19 +175,21 @@ tr:hover {
 
 /* === Responsive Design === */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
+   .menu-toggle {
+    display: none; /* ✅ No menu button */
   }
 
-  .menu-toggle {
-    display: block;
+  .container {
+    flex-direction: row; /* ✅ Keep sidebar on the left */
   }
 
   .sidebar {
-    width: 100%;
-    padding: 15px;
-    background-color: #333;
+    display: block;      /* ✅ Always show sidebar */
+    width: 200px;        /* Or whatever width fits nicely */
+    height: auto;        /* Let it grow naturally */
   }
+
+ 
 
   .sidebar ul li a {
     display: block;
