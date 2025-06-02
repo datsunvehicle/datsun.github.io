@@ -3,15 +3,39 @@ const cars = [
     make: 'Chevrolet',
     model: 'traverse',
     year: 2017,
-    images: ["images/chevytraverse/BCMY1021.JPG","images/chevytraverse/CJCT0637.JPG", "images/chevytraverse/DTFU3626.JPG","images/chevytraverse/DZUN5950.JPG",
-      "images/chevytraverse/EDVN3326.JPG","images/chevytraverse/EZGY0476.JPG","images/chevytraverse/IWQX0277.JPG","images/chevytraverse/LANC2403.JPG",
-      "images/chevytraverse/LBWO5847.JPG","images/chevytraverse/LRUD7400.JPG","images/chevytraverse/NRIK9550.JPG","images/chevytraverse/OKGN3474.JPG",
-      "images/chevytraverse/RHLT0259.JPG","images/chevytraverse/SHUR6003.JPG","images/chevytraverse/UETT1170.JPG","images/chevytraverse/VJWR1430.JPG",
-      "images/chevytraverse/VTBH0091.JPG","images/chevytraverse/WTVW9115.JPG",
+    milleage: '',
+    condition: `✅ Excellent Driving Condition:
+The car runs smoothly with no issues affecting performance or drivability.
+
+🔧 Recently Serviced:
+A full service has been completed recently, ensuring the vehicle is up to date on maintenance.
+
+⚙️ No Mechanical Issues:
+The engine, transmission, brakes, and other critical components are in proper working order.
+
+🛢️ 4-Cylinder Engine – Fuel Efficient:
+Ideal for daily commuting and long-distance travel; delivers great mileage and helps save on gas.
+
+🚗 Almost New Tires:
+All four tires are in excellent condition with minimal wear—ready for the road.
+
+🧪 Open Inspection Policy:
+Feel free to schedule a test drive or bring your own trusted mechanic to inspect the car before purchasing.`,
+    images: [
+      "images/chevytraverse/BCMY1021.JPG", "images/chevytraverse/CJCT0637.JPG", 
+      "images/chevytraverse/DTFU3626.JPG", "images/chevytraverse/DZUN5950.JPG",
+      "images/chevytraverse/EDVN3326.JPG", "images/chevytraverse/EZGY0476.JPG",
+      "images/chevytraverse/IWQX0277.JPG", "images/chevytraverse/LANC2403.JPG",
+      "images/chevytraverse/LBWO5847.JPG", "images/chevytraverse/LRUD7400.JPG",
+      "images/chevytraverse/NRIK9550.JPG", "images/chevytraverse/OKGN3474.JPG",
+      "images/chevytraverse/RHLT0259.JPG", "images/chevytraverse/SHUR6003.JPG",
+      "images/chevytraverse/UETT1170.JPG", "images/chevytraverse/VJWR1430.JPG",
+      "images/chevytraverse/VTBH0091.JPG", "images/chevytraverse/WTVW9115.JPG"
     ],
-    show: true
-  },
+  }
+,
   {
+    condition:'',
     make: 'Hyundai',
     model: 'Tucson',
     year: 2021,
@@ -24,6 +48,7 @@ const cars = [
     show: true
   },
   {
+    condition:'',
     make: 'kia',
     model: 'Forte',
     year: 2020,
@@ -38,6 +63,7 @@ const cars = [
     show: true
   },
   {
+    condition:'',
     make: 'Honda',
     model: 'Civic',
     year: 2005,
@@ -52,6 +78,7 @@ const cars = [
 const tableBody = document.querySelector('#carTable tbody');
 const carDetails = document.getElementById('carDetails');
 const carTitle = document.getElementById('carTitle');
+const carCondition=document.getElementById('carCondition');
 const carImage = document.getElementById('carImage');
 const overlay = document.getElementById('overlay');
 
@@ -74,7 +101,7 @@ function showDetails(index) {
   const car = cars[index];
   currentImages = car.images;
   currentIndex = 0;
-
+  carCondition.textContent=`${car.condition}`;
   carTitle.textContent = `${car.make} ${car.model} (${car.year})`;
   updateImage();
 
