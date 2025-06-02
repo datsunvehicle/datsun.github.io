@@ -1,270 +1,62 @@
-html {
-  font-size: 16px;
-}
-
-@media (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  html {
-    font-size: 13px;
-  }
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f9f9f9;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.menu-toggle {
-  display: none;
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  font-size: 18px;
-  text-align: left;
-}
-
+/* === Default Desktop and Tablet Layout === */
 .container {
   display: flex;
-  flex: 1;
+  flex-direction: row;
   height: 100%;
   width: 100%;
-  overflow: hidden;
 }
 
-/* === Sidebar === */
 .sidebar {
   width: 220px;
   background-color: #333;
   color: white;
+  position: fixed;  /* Keep it fixed to the left */
+  height: 100vh;
   padding: 20px;
   box-sizing: border-box;
-  height: 100vh;
-  overflow-y: auto;
-  flex-shrink: 0;
 }
 
-.sidebar h2 {
-  color: #fff;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar ul li a {
-  display: block;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-}
-
-.sidebar ul li a:hover {
-  background-color: #575757;
-}
-
-/* === Content === */
 .content {
-  flex-grow: 1;
+  margin-left: 220px;  /* Space for sidebar */
   padding: 20px;
+  flex-grow: 1;
   overflow-y: auto;
 }
 
-.content-section {
-  margin-bottom: 40px;
-}
-
-h1, h2 {
-  color: #333;
-}
-
-/* === Table Styling === */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  background-color: #fff;
-}
-
-th, td {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: left;
-}
-
-th {
-  background-color: #333;
-  color: white;
-}
-
-tr:hover {
-  background-color: #f1f1f1;
-  cursor: pointer;
-}
-
-/* === Modal and Overlay === */
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1000;
-}
-
-#carDetails {
-  position: fixed;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 600px;
-  background-color: #fff;
-  padding: 20px;
-  border: 2px solid #ccc;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1001;
-}
-
-#imageViewer {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-  justify-content: center;
-}
-
-#carImage {
-  max-width: 100%;
-  max-height:400px;
-  height: auto;
-  border: 1px solid #ccc;
-  transition: opacity 0.3s ease-in-out;
-}
-
-#imageViewer button,
-#carDetails button {
-  padding: 8px 12px;
-  font-size: 16px;
-  border: 1px solid #aaa;
-  background-color: #eee;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-#imageViewer button:hover,
-#carDetails button:hover {
-  background-color: #ddd;
-}
-
-.hidden {
-  display: none;
-}
-
-/* === Responsive Design === */
+/* === Mobile Styles (below 768px) === */
 @media (max-width: 768px) {
-   .menu-toggle {
-    display: none; /* ✅ No menu button */
-  }
-
   .container {
-    flex-direction: row; /* ✅ Keep sidebar on the left */
+    flex-direction: row;  /* Keep sidebar and content side-by-side */
+    margin-left: 0;  /* No extra margin */
   }
 
   .sidebar {
-    display: block;      /* ✅ Always show sidebar */
-    width: 200px;        /* Or whatever width fits nicely */
-    height: auto;        /* Let it grow naturally */
-  }
-
- 
-
-  .sidebar ul li a {
-    display: block;
-    padding: 12px;
-    border-bottom: 1px solid #444;
-  }
-
-  .sidebar.active {
-    display: block;
-  }
-
-  .container {
-    flex-direction: column;
+    width: 200px;  /* Sidebar width on mobile */
+    height: auto;
+    position: relative;  /* Sidebar scrollable */
   }
 
   .content {
-    width: 100%;
+    margin-left: 0;
+    padding: 10px;
   }
 
-  table, th, td {
-    font-size: 14px;
-  }
-
-  #carDetails {
-    width: 95%;
-    top: 5%;
-  }
-
-  #imageViewer {
-    flex-direction: column;
-  }
-
-  #imageViewer button {
-    width: 100%;
+  .sidebar ul li a {
+    font-size: 14px;  /* Adjust text size for mobile */
   }
 }
 
-@media (max-width: 600px) {
-  table, thead, tbody, th, td, tr {
-    display: block;
-    width: 100%;
-  }
-
-  thead {
-    display: none;
-  }
-
-  tr {
-    margin-bottom: 15px;
-    border-bottom: 2px solid #ddd;
-  }
-
-  td {
-    text-align: right;
-    padding-left: 50%;
+/* === Very Small Screens (below 480px) === */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;  /* Full width sidebar on small screens */
     position: relative;
+    height: auto;
+    overflow-y: auto;  /* Allow sidebar scrolling */
   }
 
-  td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 0;
-    width: 50%;
-    padding-left: 15px;
-    font-weight: bold;
-    text-align: left;
+  .content {
+    padding: 10px;
+    margin-left: 0;
   }
-}
-
-.table-container {
-  width: 100%;
-  overflow-x: auto;
-}
-
-table {
-  table-layout: fixed; /* Ensures cells don't shrink unevenly */
-  min-width: 400px;     /* Or whatever minimum width you want */
 }
