@@ -6,7 +6,7 @@ const cars = [
     milleage: '161,000',
     price:'$6,500',
     show:true,
-    condition: `✅ Excellent Driving Condition:
+    condition: `
 <ul>
   <li>⚙️ No mechanical issues in engine, transmission, or brakes</li>
   <li>💡 Smooth performance with no drivability concerns</li>
@@ -27,7 +27,7 @@ const cars = [
   }
 ,
   {
-    condition:`✅ Excellent Driving Condition : <ul>
+    condition:` <ul>
   <li>✨ Almost brand-new condition</li>
   <li>🎥 Backup camera included</li>
   <li>💺 Power-adjustable seat</li>
@@ -51,7 +51,7 @@ const cars = [
      make: 'kia',
     model: 'Forte',
     year: 2020,
-    condition:`✅ Excellent Driving Conditionor Sale: Like-New Car:<ul>
+    condition:`<ul>
   <li>📉 Extremely low mileage – only 8,000 miles!</li>
   <li>✨ Like-new condition inside and out</li>
   <li>🧼 No visible wear or tear</li>
@@ -70,7 +70,7 @@ const cars = [
     show: true
   },
   {
-    condition:`✅ Excellent Driving Condition : <ul>
+    condition:` <ul>
   <li>🛠️ Recently serviced and ready to go</li>
   <li>🛞 Tires are nearly new</li>
   <li>✅ No mechanical issues</li>
