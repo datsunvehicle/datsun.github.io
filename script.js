@@ -127,6 +127,6 @@ function showSection(id) {
   });
   document.getElementById(id).classList.remove('hidden');
 }
-function toggleMenu() {
-  document.querySelector('.sidebar').classList.toggle('active');
-}
+//function toggleMenu() {
+ // document.querySelector('.sidebar').classList.toggle('active');
+//}
