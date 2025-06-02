@@ -17,7 +17,7 @@ html {
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f9f9f9;
+  background: linear-gradient(to right, #edf3f7, #f9fbfc); /* Soft professional gradient */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -82,6 +82,10 @@ body {
 }
 
 .content-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   margin-bottom: 40px;
 }
 
@@ -245,4 +249,22 @@ tr:hover {
     font-weight: bold;
     text-align: left;
   }
+}
+#overview {
+  background-color: #ffffff;
+  border-left: 6px solid #3498db; /* Blue accent for professionalism */
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#overview h1 {
+  color: #2c3e50;
+  margin-top: 0;
+  font-size: 1.8em;
+}
+
+#overview p {
+  line-height: 1.6;
+  color: #444;
 }
