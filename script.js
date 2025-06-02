@@ -3,7 +3,8 @@ const cars = [
     make: 'Chevrolet',
     model: 'traverse',
     year: 2017,
-    milleage: '',
+    milleage: '161,000',
+    price:'$6,500',
     condition: `✅ Excellent Driving Condition:
 The car runs smoothly with no issues affecting performance or drivability.
 
@@ -39,6 +40,8 @@ Feel free to schedule a test drive or bring your own trusted mechanic to inspect
     make: 'Hyundai',
     model: 'Tucson',
     year: 2021,
+    milleage: '52,000',
+    price:'$15,450',
      images: ["images/hyundiatucson/ACOB3309.JPG","images/hyundiatucson/APRM7360.JPG", "images/hyundiatucson/BIZQ5139.JPG","images/hyundiatucson/CEWL9729.JPG",
       "images/hyundiatucson/HUPK2456.JPG","images/hyundiatucson/IAZA0773.JPG","images/hyundiatucson/KUWM6354.JPG","images/hyundiatucson/LWPT1972.JPG",
       "images/hyundiatucson/MFHW0920.JPG","images/hyundiatucson/OUHD9137.JPG","images/hyundiatucson/PAMO5438.JPG","images/hyundiatucson/QGWH4070.JPG",
@@ -52,6 +55,8 @@ Feel free to schedule a test drive or bring your own trusted mechanic to inspect
     make: 'kia',
     model: 'Forte',
     year: 2020,
+    milleage: '16,950',
+    price:'$8000',
     images: [
   
       "images/kia/IMG_3738.JPG","images/kia/IMG_3739.JPG", "images/kia/IMG_3740.JPG","images/kia/IMG_3741.JPG",
@@ -67,6 +72,8 @@ Feel free to schedule a test drive or bring your own trusted mechanic to inspect
     make: 'Honda',
     model: 'Civic',
     year: 2005,
+    milleage: '156,000',
+    price:'$3,950',
     images: ["images/hondacivic/CQTZ1927.JPG", "images/hondacivic/CWZF7485.JPG","images/hondacivic/ERXJ9584.JPG","images/hondacivic/GBXZ6124.JPG",
       "images/hondacivic/HIDN0672.JPG","images/hondacivic/IVBU6422.JPG","images/hondacivic/JTOJ2054.JPG","images/hondacivic/KDBQ3695.JPG",
       "images/hondacivic/MQVW0244.JPG","images/hondacivic/QDND8422.JPG","images/hondacivic/TCUT9580.JPG","images/hondacivic/TJCI6545.JPG",
@@ -92,6 +99,8 @@ cars.filter(c => c.show).forEach((car, index) => {
     <td>${car.make}</td>
     <td>${car.model}</td>
     <td>${car.year}</td>
+    <td>${car.milleage}</td>
+    <td>${car.price}</td>
   `;
   row.addEventListener('click', () => showDetails(index));
   tableBody.appendChild(row);
