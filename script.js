@@ -5,6 +5,7 @@ const cars = [
     year: 2017,
     milleage: '161,000',
     price:'$6,500',
+    show:true,
     condition: `✅ Excellent Driving Condition:
 The car runs smoothly with no issues affecting performance or drivability.
 
