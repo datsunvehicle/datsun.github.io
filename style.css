@@ -301,9 +301,9 @@ tr:hover {
   color: #444;
 }
 
-#overview { border-left-color: #3498db; background-color:darkgray}       /* Blue */
-#garage { border-left-color: #e67e22; }         /* Orange */
-#used-cars { border-left-color: #9b59b6; }      /* Purple */
-#availability { border-left-color: #27ae60; }   /* Green */
-#contact { border-left-color: #7f8c8d; } 
+#overview { border-left-color: #3498db; background-color:lightgray;}       /* Blue */
+#garage { border-left-color: #e67e22; background-color:lightgray;}         /* Orange */
+#used-cars { border-left-color: #9b59b6; background-color:lightgray;}      /* Purple */
+#availability { border-left-color: #27ae60; background-color:lightgray;}   /* Green */
+#contact { border-left-color: #7f8c8d; background-color:lightgray;} 
 
