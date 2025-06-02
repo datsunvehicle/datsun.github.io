@@ -60,9 +60,9 @@ let currentIndex = 0;
 cars.filter(c => c.show).forEach((car, index) => {
   const row = document.createElement('tr');
   row.innerHTML = `
-    <td data-label="Make">${car.make}</td>
-    <td data-label="Model">${car.model}</td>
-    <td data-label="Year">${car.year}</td>
+    <td>${car.make}</td>
+    <td>${car.model}</td>
+    <td>${car.year}</td>
   `;
   row.addEventListener('click', () => showDetails(index));
   tableBody.appendChild(row);
@@ -127,6 +127,6 @@ function showSection(id) {
   });
   document.getElementById(id).classList.remove('hidden');
 }
-//function toggleMenu() {
- // document.querySelector('.sidebar').classList.toggle('active');
-//}
+function toggleMenu() {
+  document.querySelector('.sidebar').classList.toggle('active');
+}

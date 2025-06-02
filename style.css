@@ -148,7 +148,6 @@ tr:hover {
 
 #carImage {
   max-width: 100%;
-  max-height:400px;
   height: auto;
   border: 1px solid #ccc;
   transition: opacity 0.3s ease-in-out;
@@ -245,14 +244,4 @@ tr:hover {
     font-weight: bold;
     text-align: left;
   }
-}
-
-.table-container {
-  width: 100%;
-  overflow-x: auto;
-}
-
-table {
-  table-layout: fixed; /* Ensures cells don't shrink unevenly */
-  min-width: 400px;     /* Or whatever minimum width you want */
 }
