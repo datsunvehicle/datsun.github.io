@@ -3,11 +3,11 @@ const cars = [
     make: 'Chevrolet',
     model: 'traverse',
     year: 2017,
-    images: ["images/BCMY1021.JPG","images/CJCT0637.JPG", "images/DTFU3626.JPG","images/DZUN5950.JPG",
-      "images/EDVN3326.JPG","images/EZGY0476.JPG","images/IWQX0277.JPG","images/LANC2403.JPG",
-      "images/LBWO5847.JPG","images/LRUD7400.JPG","images/NRIK9550.JPG","images/OKGN3474.JPG",
-      "images/RHLT0259.JPG","images/SHUR6003.JPG","images/UETT1170.JPG","images/VJWR1430.JPG",
-      "images/VTBH0091.JPG","images/WTVW9115.JPG",
+    images: ["images/chevytraverse/BCMY1021.JPG","images/chevytraverse/CJCT0637.JPG", "images/chevytraverse/DTFU3626.JPG","images/chevytraverse/DZUN5950.JPG",
+      "images/chevytraverse/EDVN3326.JPG","images/chevytraverse/EZGY0476.JPG","images/chevytraverse/IWQX0277.JPG","images/chevytraverse/LANC2403.JPG",
+      "images/chevytraverse/LBWO5847.JPG","images/chevytraverse/LRUD7400.JPG","images/chevytraverse/NRIK9550.JPG","images/chevytraverse/OKGN3474.JPG",
+      "images/chevytraverse/RHLT0259.JPG","images/chevytraverse/SHUR6003.JPG","images/chevytraverse/UETT1170.JPG","images/chevytraverse/VJWR1430.JPG",
+      "images/chevytraverse/VTBH0091.JPG","images/chevytraverse/WTVW9115.JPG",
     ],
     show: true
   },
@@ -41,10 +41,10 @@ const cars = [
     make: 'Honda',
     model: 'Civic',
     year: 2005,
-    images: ["images/CWZF7485.JPG","images/CQTZ1927.JPG", "images/ERXJ9584.JPG","images/GBXZ6124.JPG",
-      "images/HIDN0672.JPG","images/IVBU6422.JPG","images/JTOJ2054.JPG","images/KDBQ3695.JPG",
-      "images/MQVW0244.JPG","images/QDND8422.JPG","images/TCUT9580.JPG","images/TJCI6545.JPG",
-      "images/TSYC6618.JPG"
+    images: ["images/hondacivic/CWZF7485.JPG","images/hondacivic/hondacivic/CQTZ1927.JPG", "images/hondacivic/ERXJ9584.JPG","images/hondacivic/GBXZ6124.JPG",
+      "images/hondacivic/HIDN0672.JPG","images/hondacivic/IVBU6422.JPG","images/hondacivic/JTOJ2054.JPG","images/hondacivic/KDBQ3695.JPG",
+      "images/hondacivic/MQVW0244.JPG","images/hondacivic/QDND8422.JPG","images/hondacivic/TCUT9580.JPG","images/hondacivic/TJCI6545.JPG",
+      "images/hondacivic/TSYC6618.JPG"
     ],
     show: true
   }
