@@ -56,15 +56,17 @@
 
         <div id="overlay" class="hidden"></div>
 
-        <div id="carDetails" class="hidden">
-          <h2 id="carTitle"></h2>
-          <div id="imageViewer">
-            <button onclick="prevImage()">⬅️</button>
-            <img id="carImage" src="" alt="Car Image">
-            <button onclick="nextImage()">➡️</button>
-          </div>
-          <button onclick="closeDetails()">Close</button>
-        </div>
+        <div id="carDetailsContainer" style="display: flex; gap: 20px; align-items: flex-start;">
+  <div id="carDescription" style="flex: 1;">
+    <p id="carText">Car description will go here...</p>
+  </div>
+
+  <div id="imageViewer" style="display: flex; flex-direction: column; align-items: center;">
+    <button onclick="prevImage()">⬅️</button>
+    <img id="carImage" src="" alt="Car Image" style="max-width: 300px; height: auto;">
+    <button onclick="nextImage()">➡️</button>
+  </div>
+</div>
       </section>
 
       <section id="contact" class="content-section hidden">
