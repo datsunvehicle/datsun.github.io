@@ -28,12 +28,12 @@ const cars = [
     model: 'Forte',
     year: 2020,
     images: [
-      "images/IMG_3738.JPG","images/kia/ACOB3309.JPG",
-      "images/IMG_3738.JPG","images/IMG_3739.JPG", "images/IMG_3740.JPG","images/IMG_3741.JPG",
-      "images/IMG_3742.JPG","images/IMG_3743.JPG","images/IMG_3744.JPG","images/IMG_3745.JPG",
-      "images/IMG_3746.JPG","images/IMG_3747.JPG","images/IMG_3748.JPG","images/IMG_3749.JPG",
-      "images/IMG_3750.JPG","images/IMG_3751.JPG","images/IMG_3752.JPG","images/IMG_3753.JPG",
-      "images/IMG_3754.JPG",
+  
+      "images/IMG_3738.JPG","images/kia/IMG_3739.JPG", "images/kia/IMG_3740.JPG","images/kia/IMG_3741.JPG",
+      "images/IMG_3742.JPG","images/kia/IMG_3743.JPG","images/kia/IMG_3744.JPG","imageskia//IMG_3745.JPG",
+      "images/IMG_3746.JPG","images/kia/IMG_3747.JPG","images/kia/IMG_3748.JPG","images/kia/IMG_3749.JPG",
+      "images/kia/IMG_3750.JPG","images/kia/IMG_3751.JPG","images/kia/IMG_3752.JPG","images/kia/IMG_3753.JPG",
+      "images/kia/IMG_3754.JPG",
     ],
     show: true
   },
