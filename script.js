@@ -62,7 +62,7 @@ const cars = [
     images: [
   
       "images/kia/IMG_3738.JPG","images/kia/IMG_3739.JPG", "images/kia/IMG_3740.JPG","images/kia/IMG_3741.JPG",
-      "images/kia/IMG_3742.JPG","images/kia/IMG_3743.JPG","images/kia/IMG_3744.JPG","imageskia//IMG_3745.JPG",
+      "images/kia/IMG_3742.JPG","images/kia/IMG_3743.JPG","images/kia/IMG_3744.JPG","imageskia/IMG_3745.JPG",
       "images/kia/IMG_3746.JPG","images/kia/IMG_3747.JPG","images/kia/IMG_3748.JPG","images/kia/IMG_3749.JPG",
       "images/kia/IMG_3750.JPG","images/kia/IMG_3751.JPG","images/kia/IMG_3752.JPG","images/kia/IMG_3753.JPG",
       "images/kia/IMG_3754.JPG",
@@ -176,12 +176,15 @@ function toggleMenu() {
   document.querySelector('.sidebar').classList.toggle('active');
 }
 
-document.getElementById("carImage").addEventListener("click", function () {
-  const zoomModal = document.getElementById("zoomModal");
-  const zoomedImg = document.getElementById("zoomedImg");
-  zoomedImg.src = this.src;
-  zoomModal.classList.remove("hidden");
-});
+
+if (carImage) {
+  carImage.addEventListener("click", function () {
+    const zoomModal = document.getElementById("zoomModal");
+    const zoomedImg = document.getElementById("zoomedImg");
+    zoomedImg.src = this.src;
+    zoomModal.classList.remove("hidden");
+  });
+}
 
 function closeZoom() {
   document.getElementById("zoomModal").classList.add("hidden");
