@@ -175,3 +175,14 @@ function showSection(id) {
 function toggleMenu() {
   document.querySelector('.sidebar').classList.toggle('active');
 }
+
+document.getElementById("carImage").addEventListener("click", function () {
+  const zoomModal = document.getElementById("zoomModal");
+  const zoomedImg = document.getElementById("zoomedImg");
+  zoomedImg.src = this.src;
+  zoomModal.classList.remove("hidden");
+});
+
+function closeZoom() {
+  document.getElementById("zoomModal").classList.add("hidden");
+}
