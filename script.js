@@ -57,8 +57,8 @@ const cars = [
   <li>🧼 No visible wear or tear</li>
   <li>💬 “You won’t be disappointed” – a must-see car!</li>
 </ul>`,
-    milleage: '16,950',
-    price:'$8000',
+    milleage: '8000',
+    price:'$16,950',
     images: [
   
       "images/kia/IMG_3738.JPG","images/kia/IMG_3739.JPG", "images/kia/IMG_3740.JPG","images/kia/IMG_3741.JPG",
