@@ -196,10 +196,11 @@ document.addEventListener("DOMContentLoaded", function () {
     zoomModal.classList.add("hidden");
   }
 
-  // Navigation
+  // Navigation and global exposure
   window.nextImage = nextImage;
   window.prevImage = prevImage;
   window.closeZoom = closeZoom;
+  window.closeDetails = closeDetails; // ✅ this line fixes the "closeDetails is not defined" error
   window.showSection = function (id) {
     document.querySelectorAll('.content-section').forEach(section => {
       section.classList.add('hidden');
