@@ -97,6 +97,115 @@ document.addEventListener("DOMContentLoaded", function () {
         "images/hondacivic/QDND8422.JPG", "images/hondacivic/TCUT9580.JPG", "images/hondacivic/TJCI6545.JPG",
         "images/hondacivic/TSYC6618.JPG"
       ]
+    },
+    {
+      make: 'Ford',
+      model: 'Escape',
+      year: 2018,
+      milleage: '76,000',
+      price: '$13,450',
+      show: true,
+      condition: `
+        <ul>
+          <li>🛠️ Recently serviced and ready to go</li>
+          <li>🛞 Tires are nearly new</li>
+          <li>✅ No mechanical issues</li>
+          <li>🚗 Economical and road-ready</li>
+        </ul>`,
+      images: [
+        "images/forfescape/ABUY6483.JPG", "images/forfescape/ENEZ5301.JPG", "images/forfescape/FFJX3071.JPG",
+        "images/forfescape/FVPI2615.JPG", "images/forfescape/JHNL8787.JPG", "images/forfescape/JRTO3547.JPG",
+        "images/forfescape/KMED1671.JPG", "images/forfescape/NOAE1505.JPG", "images/forfescape/PCJA3298.JPG",
+        "images/forfescape/PTEH2797.JPG", "images/forfescape/ROOF5057.JPG", "images/forfescape/TYJS8659.JPG",
+        "images/forfescape/WCWT9773.JPG", "images/forfescape/WIMY4021.JPG", "images/forfescape/WYLB8939.JPG"
+      ]
+    },
+    {
+      make: 'Toyota',
+      model: 'Corolla',
+      year: 2024,
+      milleage: '9,000',
+      price: '$18,950',
+      show: true,
+      condition: `
+        <ul>
+          <li>🛠️ Recently serviced and ready to go</li>
+          <li>🛞 Tires are nearly new</li>
+          <li>✅ No mechanical issues</li>
+          <li>🚗 Economical and road-ready</li>
+        </ul>`,
+      images: [
+        "images/toyotacorolla/BCFD9335.JPG", "images/toyotacorolla/DLVP4603.JPG", "images/toyotacorolla/GUUV1912.JPG",
+        "images/toyotacorolla/HCAC9195.JPG", "images/toyotacorolla/OEQD4310.JPG", "images/toyotacorolla/QUSW6847.JPG",
+        "images/toyotacorolla/UQSJ9563.JPG", "images/toyotacorolla/WZWB4736.JPG", "images/toyotacorolla/XBZX3360.JPG",
+        "images/toyotacorolla/YCZT5364.JPG"
+      ]
+    },
+    {
+      make: 'Toyota',
+      model: 'Camry',
+      year: 2009,
+      milleage: '140,000',
+      price: '$5,950',
+      show: true,
+      condition: `
+        <ul>
+          <li>🛠️ Recently serviced and ready to go</li>
+          <li>🛞 Tires are nearly new</li>
+          <li>✅ No mechanical issues</li>
+          <li>🚗 Economical and road-ready</li>
+        </ul>`,
+      images: [
+        "images/toyotacamry/AOQR0997.JPG", "images/toyotacamry/BBNP8565.JPG", "images/toyotacamry/DWSX7614.JPG",
+        "images/toyotacamry/HUZO5402.JPG", "images/toyotacamry/IQCX2837.JPG", "images/toyotacamry/KNLZ9916.JPG",
+        "images/toyotacamry/OJQT6412.JPG", "images/toyotacamry/OMYI0623.JPG", "images/toyotacamry/QIQX1971.JPG",
+        "images/toyotacamry/RTLH5778.JPG", "images/toyotacamry/UMMX3466.JPG", "images/toyotacamry/WQGF4159.JPG",
+      ]
+    },
+    {
+      make: 'Hyundai',
+      model: 'Elantra',
+      year: 2017,
+      milleage: '121,000',
+      price: '8,950',
+      show: true,
+      condition: `
+        <ul>
+          <li>🛠️ Recently serviced and ready to go</li>
+          <li>🛞 Tires are nearly new</li>
+          <li>✅ No mechanical issues</li>
+          <li>🚗 Economical and road-ready</li>
+        </ul>`,
+      images: [
+        "images/hyundaielantra/AIUH0502.JPG", "images/hyundaielantra/GOCG7655.JPG", "images/hyundaielantra/KYLX9160.JPG",
+        "images/hyundaielantra/MIAL4172.JPG", "images/hyundaielantra/OOBI3493.JPG", "images/hyundaielantra/SCOG3071.JPG",
+        "images/hyundaielantra/SLCY6882.JPG", "images/hyundaielantra/TLIV2311.JPG", "images/hyundaielantra/TRVN2490.JPG",       
+        "images/hyundaielantra/VLUH0354.JPG"
+      ]
+    },
+    {
+      make: 'Honda',
+      model: 'CR-H',
+      year: 2018,
+      milleage: '134,000',
+      price: '14,950',
+      show: true,
+      condition: `
+        <ul>
+          <li>🛠️ Recently serviced and ready to go</li>
+          <li>🛞 Tires are nearly new</li>
+          <li>✅ No mechanical issues</li>
+          <li>🚗 Economical and road-ready</li>
+        </ul>`,
+      images: [
+         "images/hondacrh/CYID9496.JPG", "images/hondacrh/EHAC6349.JPG","images/hondacrh/FHEF7767.JPG",
+         "images/hondacrh/GLKB2490.JPG",  "images/hondacrh/HMCG4100.JPG", "images/hondacrh/JHFG5951.JPG",
+         "images/hondacrh/JQCE5916.JPG",  "images/hondacrh/LIDV7091.JPG", "images/hondacrh/NWTV9613.JPG",       
+         "images/hondacrh/NYQH2859.JPG",  "images/hondacrh/RHVT1822.JPG", "images/hondacrh/RIKR3507.JPG", 
+         "images/hondacrh/RZQH2924.JPG", "images/hondacrh/SDJH3505.JPG", "images/hondacrh/SNJC2508.JPG",  
+         "images/hondacrh/UGUH0602.JPG", "images/hondacrh/UQIY3651.JPG", "images/hondacrh/WJLI6313.JPG",      
+         "images/hondacrh/WRDA3547.JPG", "images/hondacrh/XJAH3035.JPG",
+      ]
     }
   ];
 
