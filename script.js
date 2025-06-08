@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <li>🛞 Tires are nearly new</li>
           <li>✅ No mechanical issues</li>
           <li>🚗 Economical and road-ready</li>
-          <li><Hybrid/li>
+          <li>Hybrid</li>
         </ul>`,
       images: [
         "images/toyotacamry/AOQR0997.JPG", "images/toyotacamry/BBNP8565.JPG", "images/toyotacamry/DWSX7614.JPG",
