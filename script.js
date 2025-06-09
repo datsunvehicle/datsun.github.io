@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
       make: 'Chevrolet',
       model: 'traverse',
       year: 2017,
-      milleage: '161,000',
+      mileage: '161,000',
       price: '$6,500',
       show: true,
       condition: `
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
       make: 'Hyundai',
       model: 'Tucson',
       year: 2021,
-      milleage: '52,000',
+      mileage: '52,000',
       price: '$15,450',
       show: true,
       condition: `
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
       make: 'kia',
       model: 'Forte',
       year: 2020,
-      milleage: '8000',
+      mileage: '8000',
       price: '$16,950',
       show: true,
       condition: `
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
       make: 'Honda',
       model: 'Civic',
       year: 2005,
-      milleage: '156,000',
+      mileage: '156,000',
       price: '$3,950',
       show: true,
       condition: `
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
       make: 'Ford',
       model: 'Escape',
       year: 2018,
-      milleage: '76,000',
+      mileage: '76,000',
       price: '$13,450',
       show: true,
       condition: `
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
       make: 'Toyota',
       model: 'Corolla',
       year: 2024,
-      milleage: '9,000',
+      mileage: '9,000',
       price: '$18,950',
       show: true,
       condition: `
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
       make: 'Toyota',
       model: 'Camry',
       year: 2009,
-      milleage: '140,000',
+      mileage: '140,000',
       price: '$5,950',
       show: true,
       condition: `
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
       make: 'Hyundai',
       model: 'Elantra',
       year: 2017,
-      milleage: '121,000',
+      mileage: '121,000',
       price: '8,950',
       show: true,
       condition: `
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
       make: 'Honda',
       model: 'CR-H',
       year: 2018,
-      milleage: '134,000',
+      mileage: '134,000',
       price: '14,950',
       show: true,
       condition: `
@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <td>${car.make}</td>
       <td>${car.model}</td>
       <td>${car.year}</td>
-      <td>${car.milleage}</td>
+      <td>${car.mileage}</td>
       <td>${car.price}</td>
     `;
     row.addEventListener('click', () => showDetails(index));
