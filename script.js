@@ -4,15 +4,15 @@ document.addEventListener("DOMContentLoaded", function () {
       make: 'Chevrolet',
       model: 'traverse',
       year: 2017,
-      mileage: '161,000',
+      milleage: '161,000',
       price: '$6,500',
       show: true,
       condition: `
         <ul>
-          <li>⚙️ No mechanical issues in engine, transmission, or brakes</li>
-          <li>💡 Smooth performance with no drivability concerns</li>
-          <li>🛠️ Inspected and serviced thoroughly before being offered for sale</li>
-          <li>🧪 Transparent inspection policy – bring your own mechanic</li>
+          <li>âš™ï¸ No mechanical issues in engine, transmission, or brakes</li>
+          <li>ðŸ’¡ Smooth performance with no drivability concerns</li>
+          <li>ðŸ› ï¸ Inspected and serviced thoroughly before being offered for sale</li>
+          <li>ðŸ§ª Transparent inspection policy â€“ bring your own mechanic</li>
         </ul>`,
       images: [
         "images/chevytraverse/BCMY1021.JPG", "images/chevytraverse/CJCT0637.JPG", 
@@ -30,16 +30,16 @@ document.addEventListener("DOMContentLoaded", function () {
       make: 'Hyundai',
       model: 'Tucson',
       year: 2021,
-      mileage: '52,000',
+      milleage: '52,000',
       price: '$15,450',
       show: true,
       condition: `
         <ul>
-          <li>✨ Almost brand-new condition</li>
-          <li>🎥 Backup camera included</li>
-          <li>💺 Power-adjustable seat</li>
-          <li>💎 Extra clean interior and exterior</li>
-          <li>💰 Reliable and gas-saving</li>
+          <li>âœ¨ Almost brand-new condition</li>
+          <li>ðŸŽ¥ Backup camera included</li>
+          <li>ðŸ’º Power-adjustable seat</li>
+          <li>ðŸ’Ž Extra clean interior and exterior</li>
+          <li>ðŸ’° Reliable and gas-saving</li>
         </ul>`,
       images: [
         "images/hyundiatucson/ACOB3309.JPG", "images/hyundiatucson/APRM7360.JPG", 
@@ -58,15 +58,15 @@ document.addEventListener("DOMContentLoaded", function () {
       make: 'kia',
       model: 'Forte',
       year: 2020,
-      mileage: '8000',
+      milleage: '8000',
       price: '$16,950',
       show: true,
       condition: `
         <ul>
-          <li>📉 Extremely low mileage – only 8,000 miles!</li>
-          <li>✨ Like-new condition inside and out</li>
-          <li>🧼 No visible wear or tear</li>
-          <li>💬 “You won’t be disappointed” – a must-see car!</li>
+          <li>ðŸ“‰ Extremely low mileage â€“ only 8,000 miles!</li>
+          <li>âœ¨ Like-new condition inside and out</li>
+          <li>ðŸ§¼ No visible wear or tear</li>
+          <li>ðŸ’¬ â€œYou wonâ€™t be disappointedâ€ â€“ a must-see car!</li>
         </ul>`,
       images: [
         "images/kia/IMG_3738.JPG", "images/kia/IMG_3739.JPG", "images/kia/IMG_3740.JPG", "images/kia/IMG_3741.JPG",
@@ -80,15 +80,15 @@ document.addEventListener("DOMContentLoaded", function () {
       make: 'Honda',
       model: 'Civic',
       year: 2005,
-      mileage: '156,000',
+      milleage: '156,000',
       price: '$3,950',
       show: true,
       condition: `
         <ul>
-          <li>🛠️ Recently serviced and ready to go</li>
-          <li>🛞 Tires are nearly new</li>
-          <li>✅ No mechanical issues</li>
-          <li>🚗 Economical and road-ready</li>
+          <li>ðŸ› ï¸ Recently serviced and ready to go</li>
+          <li>ðŸ›ž Tires are nearly new</li>
+          <li>âœ… No mechanical issues</li>
+          <li>ðŸš— Economical and road-ready</li>
         </ul>`,
       images: [
         "images/hondacivic/CQTZ1927.JPG", "images/hondacivic/CWZF7485.JPG", "images/hondacivic/ERXJ9584.JPG",
@@ -102,15 +102,15 @@ document.addEventListener("DOMContentLoaded", function () {
       make: 'Ford',
       model: 'Escape',
       year: 2018,
-      mileage: '76,000',
+      milleage: '76,000',
       price: '$13,450',
       show: true,
       condition: `
         <ul>
-          <li>🛠️ Recently serviced and ready to go</li>
-          <li>🛞 Tires are nearly new</li>
-          <li>✅ No mechanical issues</li>
-          <li>🚗 Economical and road-ready</li>
+          <li>ðŸ› ï¸ Recently serviced and ready to go</li>
+          <li>ðŸ›ž Tires are nearly new</li>
+          <li>âœ… No mechanical issues</li>
+          <li>ðŸš— Economical and road-ready</li>
         </ul>`,
       images: [
         "images/forfescape/ABUY6483.JPG", "images/forfescape/ENEZ5301.JPG", "images/forfescape/FFJX3071.JPG",
@@ -124,15 +124,15 @@ document.addEventListener("DOMContentLoaded", function () {
       make: 'Toyota',
       model: 'Corolla',
       year: 2024,
-      mileage: '9,000',
+      milleage: '9,000',
       price: '$18,950',
       show: true,
       condition: `
         <ul>
-          <li>🛠️ Recently serviced and ready to go</li>
-          <li>🛞 Tires are nearly new</li>
-          <li>✅ No mechanical issues</li>
-          <li>🚗 Economical and road-ready</li>
+          <li>ðŸ› ï¸ Recently serviced and ready to go</li>
+          <li>ðŸ›ž Tires are nearly new</li>
+          <li>âœ… No mechanical issues</li>
+          <li>ðŸš— Economical and road-ready</li>
         </ul>`,
       images: [
         "images/toyotacorolla/BCFD9335.JPG", "images/toyotacorolla/DLVP4603.JPG", "images/toyotacorolla/GUUV1912.JPG",
@@ -145,15 +145,15 @@ document.addEventListener("DOMContentLoaded", function () {
       make: 'Toyota',
       model: 'Camry',
       year: 2009,
-      mileage: '140,000',
+      milleage: '140,000',
       price: '$5,950',
       show: true,
       condition: `
         <ul>
-          <li>🛠️ Recently serviced and ready to go</li>
-          <li>🛞 Tires are nearly new</li>
-          <li>✅ No mechanical issues</li>
-          <li>🚗 Economical and road-ready</li>
+          <li>ðŸ› ï¸ Recently serviced and ready to go</li>
+          <li>ðŸ›ž Tires are nearly new</li>
+          <li>âœ… No mechanical issues</li>
+          <li>ðŸš— Economical and road-ready</li>
           <li>Hybrid</li>
         </ul>`,
       images: [
@@ -167,15 +167,15 @@ document.addEventListener("DOMContentLoaded", function () {
       make: 'Hyundai',
       model: 'Elantra',
       year: 2017,
-      mileage: '121,000',
+      milleage: '121,000',
       price: '8,950',
       show: true,
       condition: `
         <ul>
-          <li>🛠️ Recently serviced and ready to go</li>
-          <li>🛞 Tires are nearly new</li>
-          <li>✅ No mechanical issues</li>
-          <li>🚗 Economical and road-ready</li>
+          <li>ðŸ› ï¸ Recently serviced and ready to go</li>
+          <li>ðŸ›ž Tires are nearly new</li>
+          <li>âœ… No mechanical issues</li>
+          <li>ðŸš— Economical and road-ready</li>
         </ul>`,
       images: [
         "images/hyundaielantra/AIUH0502.JPG", "images/hyundaielantra/GOCG7655.JPG", "images/hyundaielantra/KYLX9160.JPG",
@@ -188,15 +188,15 @@ document.addEventListener("DOMContentLoaded", function () {
       make: 'Honda',
       model: 'CR-H',
       year: 2018,
-      mileage: '134,000',
+      milleage: '134,000',
       price: '14,950',
       show: true,
       condition: `
         <ul>
-          <li>🛠️ Recently serviced and ready to go</li>
-          <li>🛞 Tires are nearly new</li>
-          <li>✅ No mechanical issues</li>
-          <li>🚗 Economical and road-ready</li>
+          <li>ðŸ› ï¸ Recently serviced and ready to go</li>
+          <li>ðŸ›ž Tires are nearly new</li>
+          <li>âœ… No mechanical issues</li>
+          <li>ðŸš— Economical and road-ready</li>
         </ul>`,
       images: [
          "images/hondacrh/CYID9496.JPG", "images/hondacrh/EHAC6349.JPG","images/hondacrh/FHEF7767.JPG",
@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <td>${car.make}</td>
       <td>${car.model}</td>
       <td>${car.year}</td>
-      <td>${car.mileage}</td>
+      <td>${car.milleage}</td>
       <td>${car.price}</td>
     `;
     row.addEventListener('click', () => showDetails(index));
@@ -310,7 +310,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.nextImage = nextImage;
   window.prevImage = prevImage;
   window.closeZoom = closeZoom;
-  window.closeDetails = closeDetails; // ✅ this line fixes the "closeDetails is not defined" error
+  window.closeDetails = closeDetails; // âœ… this line fixes the "closeDetails is not defined" error
   window.showSection = function (id) {
     document.querySelectorAll('.content-section').forEach(section => {
       section.classList.add('hidden');
