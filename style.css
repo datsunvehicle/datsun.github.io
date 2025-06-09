@@ -77,13 +77,18 @@ body {
 /* Table Responsiveness */
 #carTable {
   width: 100%;
+  min-width: 600px;
   border-collapse: collapse;
 }
-
+.table-container {
+  overflow-x: auto;
+  width: 100%;
+}
 #carTable th, #carTable td {
-  padding: 12px;
+ padding: 12px;
   border: 1px solid #ddd;
   text-align: center;
+  background: #fff;
 }
 
 #carTable th {
@@ -94,6 +99,13 @@ body {
 @media (max-width: 768px) {
   .sidebar {
     display: none;
+  }
+  #carTable {
+    font-size: 14px;
+  }
+
+  #carTable th, #carTable td {
+    padding: 8px;
   }
 
   .menu-toggle {
