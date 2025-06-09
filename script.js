@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <td>${car.make}</td>
       <td>${car.model}</td>
       <td>${car.year}</td>
-      <td>${car.milleage}</td>
+      <td>${car.mileage}</td>
       <td>${car.price}</td>
     `;
     row.addEventListener('click', () => showDetails(index));
