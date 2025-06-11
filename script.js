@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
       year: 2018,
       milleage: '76,000',
       price: '$13,450',
-      show: trues,
+      show: true,
       condition: `
         <ul>
           <li>🛠️ Recently serviced and ready to go</li>
