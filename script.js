@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       year: 2017,
       milleage: '161,000',
       price: '$6,500',
-      show: false,
+      show: true,
       condition: `
         <ul>
           <li>⚙️ No mechanical issues in engine, transmission, or brakes</li>
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
       year: 2018,
       milleage: '76,000',
       price: '$13,450',
-      show: false,
+      show: trues,
       condition: `
         <ul>
           <li>🛠️ Recently serviced and ready to go</li>
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
       year: 2024,
       milleage: '9,000',
       price: '$18,950',
-      show: false,
+      show: true,
       condition: `
         <ul>
           <li>🛠️ Recently serviced and ready to go</li>
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
       year: 2009,
       milleage: '140,000',
       price: '$5,950',
-      show: false,
+      show: true,
       condition: `
         <ul>
           <li>🛠️ Recently serviced and ready to go</li>
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
       year: 2017,
       milleage: '121,000',
       price: '8,950',
-      show: false,
+      show: true,
       condition: `
         <ul>
           <li>🛠️ Recently serviced and ready to go</li>
