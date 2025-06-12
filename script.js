@@ -26,34 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "images/chevytraverse/VTBH0091.JPG", "images/chevytraverse/WTVW9115.JPG"
       ],
     },
-    {
-      make: 'Hyundai',
-      model: 'Tucson',
-      year: 2021,
-      milleage: '52,000',
-      price: '$15,450',
-      show: true,
-      condition: `
-        <ul>
-          <li>✨ Almost brand-new condition</li>
-          <li>🎥 Backup camera included</li>
-          <li>💺 Power-adjustable seat</li>
-          <li>💎 Extra clean interior and exterior</li>
-          <li>💰 Reliable and gas-saving</li>
-        </ul>`,
-      images: [
-        "images/hyundiatucson/ACOB3309.JPG", "images/hyundiatucson/APRM7360.JPG", 
-        "images/hyundiatucson/BIZQ5139.JPG", "images/hyundiatucson/CEWL9729.JPG",
-        "images/hyundiatucson/HUPK2456.JPG", "images/hyundiatucson/IAZA0773.JPG",
-        "images/hyundiatucson/KUWM6354.JPG", "images/hyundiatucson/LWPT1972.JPG",
-        "images/hyundiatucson/MFHW0920.JPG", "images/hyundiatucson/OUHD9137.JPG",
-        "images/hyundiatucson/PAMO5438.JPG", "images/hyundiatucson/QGWH4070.JPG",
-        "images/hyundiatucson/QVIP5094.JPG", "images/hyundiatucson/REQP2726.JPG",
-        "images/hyundiatucson/THKZ5796.JPG", "images/hyundiatucson/TIOO7458.JPG",
-        "images/hyundiatucson/UMRR5440.JPG", "images/hyundiatucson/VBIC5107.JPG",
-        "images/hyundiatucson/VXHL2171.JPG", "images/hyundiatucson/WKPZ5373.JPG"
-      ],
-    },
+    
     {
       make: 'kia',
       model: 'Forte',
