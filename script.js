@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       year: 2017,
       milleage: '161,000',
       price: '$6,500',
-      show: true,
+      show: false,
       condition: `
         <ul>
           <li>⚙️ No mechanical issues in engine, transmission, or brakes</li>
