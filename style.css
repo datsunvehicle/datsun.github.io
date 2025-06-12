@@ -13,7 +13,18 @@ html {
     font-size: 13px;
   }
 }
-
+@media (max-width: 768px) {
+  .sidebar {
+    position: absolute;
+    top: 50px; /* below the menu toggle */
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+}
+.sidebar {
+  transition: all 0.3s ease;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;

@@ -285,11 +285,20 @@ document.addEventListener("DOMContentLoaded", function () {
   window.closeZoom = closeZoom;
   window.closeDetails = closeDetails; // ✅ this line fixes the "closeDetails is not defined" error
   window.showSection = function (id) {
-    document.querySelectorAll('.content-section').forEach(section => {
-      section.classList.add('hidden');
-    });
-    document.getElementById(id).classList.remove('hidden');
-  };
+  // Hide all content sections
+  document.querySelectorAll('.content-section').forEach(section => {
+    section.classList.add('hidden');
+  });
+
+  // Show the selected section
+  document.getElementById(id).classList.remove('hidden');
+
+  // Collapse the sidebar on mobile after selection
+  const sidebar = document.querySelector('.sidebar');
+  if (window.innerWidth < 768 && sidebar.classList.contains('active')) {
+    sidebar.classList.remove('active');
+  }
+};
   window.toggleMenu = function () {
     document.querySelector('.sidebar').classList.toggle('active');
   };
