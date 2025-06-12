@@ -195,8 +195,11 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentImages = [];
   let currentIndex = 0;
 
-  // Populate table
-  cars.filter(c => c.show).forEach((car, index) => {
+  // Filter only visible cars
+  const visibleCars = cars.filter(car => car.show);
+
+  // Populate table only with visible cars
+  visibleCars.forEach((car) => {
     const row = document.createElement('tr');
     row.innerHTML = `
       <td>${car.make}</td>
@@ -205,23 +208,23 @@ document.addEventListener("DOMContentLoaded", function () {
       <td>${car.milleage}</td>
       <td>${car.price}</td>
     `;
-    row.addEventListener('click', () => showDetails(index));
+    row.addEventListener('click', () => showDetails(car));
     tableBody.appendChild(row);
   });
 
-  function showDetails(index) {
-  const car = cars[index];
-  if (!car.show) return; // 🚫 Don't show hidden cars
+  function showDetails(car) {
+    // Block hidden cars manually triggered
+    if (!car.show) return;
 
-  currentImages = car.images;
-  currentIndex = 0;
-  carCondition.innerHTML = car.condition;
-  carTitle.textContent = `${car.make} ${car.model} (${car.year})`;
-  updateImage();
+    currentImages = car.images;
+    currentIndex = 0;
+    carCondition.innerHTML = car.condition;
+    carTitle.textContent = `${car.make} ${car.model} (${car.year})`;
+    updateImage();
 
-  carDetails.classList.remove('hidden');
-  overlay.classList.remove('hidden');
-}
+    carDetails.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+  }
 
   function closeDetails() {
     carDetails.classList.add('hidden');
@@ -230,7 +233,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function updateImage() {
     carImage.style.opacity = 0;
-
     setTimeout(() => {
       carImage.src = currentImages[currentIndex];
 
@@ -285,22 +287,19 @@ document.addEventListener("DOMContentLoaded", function () {
   window.nextImage = nextImage;
   window.prevImage = prevImage;
   window.closeZoom = closeZoom;
-  window.closeDetails = closeDetails; // ✅ this line fixes the "closeDetails is not defined" error
+  window.closeDetails = closeDetails;
   window.showSection = function (id) {
-  // Hide all content sections
-  document.querySelectorAll('.content-section').forEach(section => {
-    section.classList.add('hidden');
-  });
+    document.querySelectorAll('.content-section').forEach(section => {
+      section.classList.add('hidden');
+    });
+    document.getElementById(id).classList.remove('hidden');
 
-  // Show the selected section
-  document.getElementById(id).classList.remove('hidden');
+    // 📱 Collapse sidebar on mobile
+    if (window.innerWidth <= 768) {
+      document.querySelector('.sidebar').classList.remove('active');
+    }
+  };
 
-  // Collapse the sidebar on mobile after selection
-  const sidebar = document.querySelector('.sidebar');
-  if (window.innerWidth < 768 && sidebar.classList.contains('active')) {
-    sidebar.classList.remove('active');
-  }
-};
   window.toggleMenu = function () {
     document.querySelector('.sidebar').classList.toggle('active');
   };
