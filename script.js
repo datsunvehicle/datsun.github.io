@@ -210,16 +210,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function showDetails(index) {
-    const car = cars[index];
-    currentImages = car.images;
-    currentIndex = 0;
-    carCondition.innerHTML = car.condition;
-    carTitle.textContent = `${car.make} ${car.model} (${car.year})`;
-    updateImage();
+  const car = cars[index];
+  if (!car.show) return; // 🚫 Don't show hidden cars
 
-    carDetails.classList.remove('hidden');
-    overlay.classList.remove('hidden');
-  }
+  currentImages = car.images;
+  currentIndex = 0;
+  carCondition.innerHTML = car.condition;
+  carTitle.textContent = `${car.make} ${car.model} (${car.year})`;
+  updateImage();
+
+  carDetails.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+}
 
   function closeDetails() {
     carDetails.classList.add('hidden');
