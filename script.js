@@ -180,6 +180,27 @@ document.addEventListener("DOMContentLoaded", function () {
          "images/hondacrh/UGUH0602.JPG", "images/hondacrh/UQIY3651.JPG", "images/hondacrh/WJLI6313.JPG",      
          "images/hondacrh/WRDA3547.JPG", "images/hondacrh/XJAH3035.JPG",
       ]
+    },
+    {
+      make: 'Toyota',
+      model: 'Corolla',
+      year: 2018,
+      milleage: '114,000',
+      price: '8,950',
+      show: true,
+      condition: `
+        <ul>
+          <li>🛠️ Recently serviced and ready to go</li>
+          <li>🛞 Tires are nearly new</li>
+          <li>✅ No mechanical issues</li>
+          <li>🚗 Economical and road-ready</li>
+        </ul>`,
+      images: [
+         "images/hondacrh/AUJJ6558.JPG", "images/hondacrh/FAUM1712.JPG","images/hondacrh/FAUM1712.JPG",
+         "images/hondacrh/FVDT5814.JPG",  "images/hondacrh/FVQZ0953.JPG", "images/hondacrh/GAVY7833.JPG",
+         "images/hondacrh/NQIC0004.JPG",  "images/hondacrh/VDAF7281.JPG", "images/hondacrh/WIGU8211.JPG",       
+         "images/hondacrh/WQHB8713.JPG",  "images/hondacrh/XLCK5245.JPG",
+      ]
     }
   ];
 
