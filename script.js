@@ -196,10 +196,10 @@ document.addEventListener("DOMContentLoaded", function () {
           <li>🚗 Economical and road-ready</li>
         </ul>`,
       images: [
-         "images/hondacrh/AUJJ6558.JPG", "images/hondacrh/FAUM1712.JPG","images/hondacrh/FAUM1712.JPG",
-         "images/hondacrh/FVDT5814.JPG",  "images/hondacrh/FVQZ0953.JPG", "images/hondacrh/GAVY7833.JPG",
-         "images/hondacrh/NQIC0004.JPG",  "images/hondacrh/VDAF7281.JPG", "images/hondacrh/WIGU8211.JPG",       
-         "images/hondacrh/WQHB8713.JPG",  "images/hondacrh/XLCK5245.JPG",
+         "images/TCorolla2016/AUJJ6558.JPG", "images/TCorolla2016/FAUM1712.JPG","images/TCorolla2016/FAUM1712.JPG",
+         "images/TCorolla2016/FVDT5814.JPG",  "images/TCorolla2016/FVQZ0953.JPG", "images/TCorolla2016/GAVY7833.JPG",
+         "images/TCorolla2016/NQIC0004.JPG",  "images/TCorolla2016/VDAF7281.JPG", "images/TCorolla2016/WIGU8211.JPG",       
+         "images/TCorolla2016/WQHB8713.JPG",  "images/TCorolla2016/XLCK5245.JPG",
       ]
     }
   ];
